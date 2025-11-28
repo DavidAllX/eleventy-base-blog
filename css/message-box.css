@@ -18,7 +18,7 @@
 }
 
 .message-box a[href] {
-  color: #152514; /* Forest floor - dark and readable */
+  color: #F5E6B3; /* Bright cream - highly readable on green */
 }
 
 .message-box a[href]:hover {
@@ -26,7 +26,7 @@
 }
 
 .message-box a[href]:visited {
-  color: #2A2A28; /* Dark warm color for visited */
+  color: #E8D89F; /* Warm gold for visited */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,6 +39,6 @@
   }
   
   .message-box a[href]:hover {
-    color: #E8D89F; /* Warm gold on hover */
+    color: #FFE5A3; /* Even brighter gold on hover */
   }
 }
