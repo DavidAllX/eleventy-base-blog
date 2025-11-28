@@ -1,0 +1,83 @@
+/* ============================================
+   Color Theme: Forest & Gold (with Pale Sage)
+   --------------------------------------------
+   Light Mode: #D8DCCB background
+   Dark Mode: Forest background
+   ============================================ */
+
+:root {
+  /* Neutral Grays */
+  --color-gray-20: #D8DCCB; /* background */
+  --color-gray-50: #BEB9A6; /* divider tone */
+  --color-gray-90: #2A2A28; /* body text */
+
+  /* Brand Colors */
+  --color-forest-green: #152514;
+  --color-gold: #C5B358;
+  --color-gold-hover: #AF9E49;
+  --color-contrast: #7A4A3A; /* optional accent */
+
+  /* Core Theme */
+  --background-color: var(--color-gray-20);
+  --text-color: var(--color-gray-90);
+  --text-color-secondary: #394732;
+
+  /* Links */
+  --text-color-link: var(--color-gold);
+  --text-color-link-hover: var(--color-gold-hover);
+  --text-color-link-active: var(--color-forest-green);
+  --text-color-link-visited: #6B5E3E;
+
+  /* Accessibility */
+  --syntax-tab-size: 2;
+
+  /* Logo paths — change these to your actual image URLs */
+  --logo-light: url("/img/mount-purpose-logo.png");
+  --logo-dark: url("/img/mount-purpose-logo-darkmode.png");
+}
+
+/* ===================================================
+   Dark mode adjustments
+   =================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-20: #1E2119;
+    --color-gray-50: #394732;
+    --color-gray-90: #E6E4DA;
+
+    --color-forest-green: #A9B89E;
+    --color-gold: #E0C97A;
+    --color-gold-hover: #D7B95E;
+    --color-contrast: #9C6753;
+
+    --background-color: #152514;
+    --text-color: var(--color-gray-90);
+    --text-color-secondary: #C5CBB5;
+
+    --text-color-link: var(--color-gold);
+    --text-color-link-hover: var(--color-gold-hover);
+    --text-color-link-active: var(--color-contrast);
+    --text-color-link-visited: #BBA468;
+  }
+
+  /* Swap logo for light version */
+  #site-logo {
+    content: var(--logo-light);
+    background-image: var(--logo-light);
+  }
+}
+
+/* ===================================================
+   Default logo (light mode)
+   =================================================== */
+
+#site-logo {
+  display: block;
+  width: 200px;
+  height: auto;
+  background-image: var(--logo-dark);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem auto;
+}
