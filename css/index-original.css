@@ -6,32 +6,32 @@
 
 /* Theme colors */
 :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+/* Neutral Grays */
+  --color-gray-20: #D8DCCB; /* background */
+  --color-gray-50: #BEB9A6; /* divider tone */
+  --color-gray-90: #2A2A28; /* body text */
 
-	--background-color: #fff;
-
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+  /* Brand Colors */
+  --color-forest-green: #152514;
+  --color-gold: #C5B358;
+  --color-gold-hover: #AF9E49;
+  --color-contrast: #7A4A3A; /* optional accent */
 
 	--syntax-tab-size: 2;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
+  --color-gray-20: #D8DCCB; /* background */
+  --color-gray-50: #BEB9A6; /* divider tone */
+  --color-gray-90: #2A2A28; /* body text */
 
 		/* --text-color is assigned to --color-gray-_ above */
 		--text-color-link: #1493fb;
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
 
-		--background-color: #d8dccb;
+		--background-color: #394732;
 	}
 }
 
