@@ -7,6 +7,7 @@
   color: #F5F3E8; /* Warm cream text */
   padding: 1em 0.625em; /* 16px 10px /16 */
 }
+
 .message-box ol {
   margin-top: 0;
 }
@@ -16,8 +17,28 @@
   color: #F5F3E8;
 }
 
+.message-box a[href] {
+  color: #152514; /* Forest floor - dark and readable */
+}
+
+.message-box a[href]:hover {
+  color: #C5B358; /* Monarch gold on hover */
+}
+
+.message-box a[href]:visited {
+  color: #2A2A28; /* Dark warm color for visited */
+}
+
 @media (prefers-color-scheme: dark) {
   .message-box {
     --color-message-box: #556B52; /* Slightly lighter green for dark mode */
+  }
+  
+  .message-box a[href] {
+    color: #F5E6B3; /* Bright cream for readability */
+  }
+  
+  .message-box a[href]:hover {
+    color: #E8D89F; /* Warm gold on hover */
   }
 }
