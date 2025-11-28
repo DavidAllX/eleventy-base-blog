@@ -1,298 +1,84 @@
-/* Defaults */
+/* ============================================
+   Color Theme: Forest & Gold (with Pale Sage)
+   --------------------------------------------
+   Light Mode: #D8DCCB background
+   Dark Mode: Forest background
+   ============================================ */
+
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+  /* Neutral Grays */
+  --color-gray-20: #D8DCCB; /* background */
+  --color-gray-50: #BEB9A6; /* divider tone */
+  --color-gray-90: #2A2A28; /* body text */
+
+  /* Brand Colors */
+  --color-forest-green: #152514;
+  --color-gold: #C5B358;
+  --color-gold-hover: #AF9E49;
+  --color-contrast: #7A4A3A; /* optional accent */
+
+  /* Core Theme */
+  --background-color: var(--color-gray-20);
+  --text-color: var(--color-gray-90);
+  --text-color-secondary: #394732;
+
+  /* Links */
+  --text-color-link: var(--color-gold);
+  --text-color-link-hover: var(--color-gold-hover);
+  --text-color-link-active: var(--color-forest-green);
+  --text-color-link-visited: #6B5E3E;
+
+  /* Accessibility */
+  --syntax-tab-size: 2;
+
+  /* Logo paths — change these to your actual image URLs */
+  --logo-light: url("/img/mount-purpose-logo.png");
+  --logo-dark: url("/img/mount-purpose-logo-darkmode.png");
 }
 
-/* Theme colors */
-:root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
-
-	--background-color: #fff;
-
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
-
-	--syntax-tab-size: 2;
-}
+/* ===================================================
+   Dark mode adjustments
+   =================================================== */
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
+  :root {
+    --color-gray-20: #1E2119;
+    --color-gray-50: #394732;
+    --color-gray-90: #E6E4DA;
 
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+ /* Brand Colors */
+  --color-forest-green: #152514;
+  --color-gold: #C5B358;
+  --color-gold-hover: #AF9E49;
+  --color-contrast: #7A4A3A; /* optional accent */
 
-		--background-color: #d8dccb;
-	}
+    --background-color: #152514;
+    --text-color: var(--color-gray-90);
+    --text-color-secondary: #C5CBB5;
+
+    --text-color-link: var(--color-gold);
+    --text-color-link-hover: var(--color-gold-hover);
+    --text-color-link-active: var(--color-contrast);
+    --text-color-link-visited: #BBA468;
+  }
+
+  /* Swap logo for light version */
+  #site-logo {
+    content: var(--logo-light);
+    background-image: var(--logo-light);
+  }
 }
 
+/* ===================================================
+   Default logo (light mode)
+   =================================================== */
 
-/* Global stylesheet */
-* {
-	box-sizing: border-box;
-}
-
-@view-transition {
-	navigation: auto;
-}
-
-html,
-body {
-	padding: 0;
-	margin: 0 auto;
-	font-family: var(--font-family);
-	color: var(--text-color);
-	background-color: var(--background-color);
-}
-html {
-	overflow-y: scroll;
-}
-body {
-	max-width: 40em;
-}
-
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
-.visually-hidden:not(:focus):not(:active) {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
-/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
-img{
-  max-width: 100%;
-}
-img[width][height] {
+#site-logo {
+  display: block;
+  width: 200px;
   height: auto;
+  background-image: var(--logo-dark);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem auto;
 }
-img[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
-}
-video,
-iframe {
-	width: 100%;
-	height: auto;
-}
-iframe {
-	aspect-ratio: 16/9;
-}
-
-p:last-child {
-	margin-bottom: 0;
-}
-p {
-	line-height: 1.5;
-}
-
-li {
-	line-height: 1.5;
-}
-
-a[href] {
-	color: var(--text-color-link);
-}
-a[href]:visited {
-	color: var(--text-color-link-visited);
-}
-a[href]:hover,
-a[href]:active {
-	color: var(--text-color-link-active);
-}
-
-main,
-footer {
-	padding: 1rem;
-}
-main :first-child {
-	margin-top: 0;
-}
-
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
-
-#skip-link {
-	text-decoration: none;
-	background: var(--background-color);
-	color: var(--text-color);
-	padding: 0.5rem 1rem;
-	border: 1px solid var(--color-gray-90);
-	border-radius: 2px;
-}
-
-/* Prevent visually-hidden skip link fom pushing content around when focused */
-#skip-link.visually-hidden:focus {
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	/* Ensure it is positioned on top of everything else when it is shown */
-	z-index: 999;
-}
-
-.links-nextprev {
-	display: flex;
-	justify-content: space-between;
-	gap: .5em 1em;
-	list-style: "";
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
-}
-.links-nextprev > * {
-	flex-grow: 1;
-}
-.links-nextprev-next {
-	text-align: right;
-}
-
-table {
-	margin: 1em 0;
-}
-table td,
-table th {
-	padding-right: 1em;
-}
-
-pre,
-code {
-	font-family: var(--font-family-monospace);
-}
-pre:not([class*="language-"]) {
-	margin: .5em 0;
-	line-height: 1.375; /* 22px /16 */
-	-moz-tab-size: var(--syntax-tab-size);
-	-o-tab-size: var(--syntax-tab-size);
-	tab-size: var(--syntax-tab-size);
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	overflow-x: auto;
-}
-code {
-	word-break: break-all;
-}
-
-/* Header */
-header {
-	display: flex;
-	gap: 1em;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1em;
-}
-.home-link {
-	flex-grow: 1;
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-}
-.home-link:link:not(:hover) {
-	text-decoration: none;
-}
-
-/* Nav */
-.nav {
-	display: flex;
-	gap: .5em 1em;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.nav-item {
-	display: inline-block;
-}
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
-.nav a[href][aria-current="page"] {
-	text-decoration: underline;
-}
-
-/* Posts list */
-.postlist {
-	counter-reset: start-from var(--postlist-index);
-	list-style: none;
-	padding: 0;
-	padding-left: 1.5rem;
-}
-.postlist-item {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	counter-increment: start-from -1;
-	margin-bottom: 1em;
-}
-.postlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
-}
-.postlist-date,
-.postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
-	color: var(--color-gray-90);
-}
-.postlist-date {
-	word-spacing: -0.5px;
-}
-.postlist-link {
-	font-size: 1.1875em; /* 19px /16 */
-	font-weight: 700;
-	flex-basis: calc(100% - 1.5rem);
-	padding-left: .25em;
-	padding-right: .5em;
-	text-underline-position: from-font;
-	text-underline-offset: 0;
-	text-decoration-thickness: 1px;
-}
-.postlist-item-active .postlist-link {
-	font-weight: bold;
-}
-
-/* Tags */
-.post-tag {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: capitalize;
-	font-style: italic;
-}
-.postlist-item > .post-tag {
-	align-self: center;
-}
-
-/* Tags list */
-.post-metadata {
-	display: inline-flex;
-	flex-wrap: wrap;
-	gap: .5em;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-.post-metadata time {
-	margin-right: 1em;
-}
-
