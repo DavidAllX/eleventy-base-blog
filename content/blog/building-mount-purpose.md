@@ -1,89 +1,96 @@
 ---
-title: "From Mount Ethos to Mount Purpose: Building a Platform for the Journey"
-description: "The story of how a platform for transformation emerged from the Olympic rainforest, through DC salons, to this digital space—and why building it felt like coming home."
+title: "From the Valley to Mount Purpose: A Second Mountain Journey"
+description: "How walking away from success, descending through loss, and returning home revealed the mountain I was always meant to climb."
 date: 2025-11-29
 tags:
   - journey
+  - second-mountain
+  - homecoming
   - mount-ethos
-  - beginning
-  - events
 ---
 
-Mount Purpose didn't begin yesterday when I launched this website. It began in the rainforest.
+Mount Purpose didn't begin when I launched this website yesterday. It didn't even begin with the three gatherings I hosted in DC earlier this year.
 
-## The First Mountain: Mount Ethos
+It began the day I walked away from my first mountain.
 
-During Covid, I found myself on the Olympic Peninsula in Washington State—surrounded by ancient trees, mountains, and the kind of silence that forces you to listen. It was there, in that liminal space between what I'd achieved and what I was becoming, that I discovered my principled backbone. I called it Mount Ethos.
+## Walking Away from the Summit
 
-The first mountain taught me about success, ambition, and summiting peaks. But the rainforest taught me something different: that there's a deeper mountain, one built not on achievement but on alignment. Not on proving, but on becoming.
+I had built a $5 million annual revenue social media agency. By conventional metrics, I had summited. Success. Revenue. Recognition. All the markers that tell you you've made it.
 
-## Facing the Shadow
+And then I looked at what I was building. At whose interests I was serving. At the distance between my principles and my practice.
 
-Then came the decision that would define everything: returning to Washington, DC.
+So I walked away.
 
-Not to reclaim old victories or prove anything to anyone. But to face my shadow—to return to the realm where I'd summited my first peak and see what remained when the validation faded. To discover whether Mount Ethos could become something more tangible, more generous, more in service to others navigating their own transitions.
+Not because I had another peak in sight. Not because I knew what came next. But because I understood, with sudden clarity, that using my talents for purposes misaligned with my values was a summit I could no longer stand on.
 
-That's when Mount Ethos became Mount Purpose.
+That's when the descent began.
 
-## The First Gatherings
+## Down, Down, Down
 
-Between February and April 2024, I hosted three Mount Purpose events in DC. Each one felt like a experiment in creating sacred space for transformation:
+They don't prepare you for the valley.
 
-**MOUNT PURPOSE: Lunar New Year Potluck** (February 12, 2024)  
-At Cielo, we gathered to mark new beginnings. Not the January 1st kind—the deeper kind. The lunar calendar knows something we often forget: that real renewal happens in cycles, in the dark before the dawn.
+The first mountain teaches you to climb—to strive, to achieve, to prove. But no one mentions that the path to the second mountain goes down first. Way down. Through the dissolution of identity. Through the loss of the story you told yourself about who you were.
 
-**MOUNT PURPOSE: LEAP with PURPOSE** (February 29, 2024)  
-Leap day. A date that exists in the margins. At Pow Pow, we explored what it means to leap before you're ready—to move toward purpose even when the path isn't clear. Because some decisions can only be made once every four years. Some decisions require the audacity of the impossible date.
+The valley is long. And dark. And necessary.
 
-**MOUNT PURPOSE: Women's Health in America** (April 17, 2024)  
-At the National Press Club, we created space for four storytellers to share their experiences navigating one of our most fraught transitions: the intersection of women's health, policy, and personal agency. Twenty-nine community members witnessed, listened, and held space for difficult truths.
+During Covid, I found myself on the Olympic Peninsula in Washington—in Beaver, a place so small it barely exists on maps. Ancient rainforest. Mountains that dwarf human ambition. And Dave Hahn, the Salmon Keeper, who understood something about cycles and seasons and the patience required for transformation.
 
-Across three events, four storytellers elevated their voices. Twenty-nine people showed up. Not for networking. Not for content. But for the rare experience of gathering with intention around questions that matter.
+My uncle, David Sterner the Cidermaker, knew it too—that some fruits need time to ferment, to become something richer than their original form.
 
-## The Digital Mountain
+In that liminal space, surrounded by those who understood the long work of becoming, I felt something shift. Not a return to the first mountain, but the first glimpse of a second one. Higher. Different. Built not on achievement but on alignment.
 
-For months, Mount Purpose lived only in those rooms—in the conversations that lingered after, in the connections that formed, in the quiet shifts that happen when people feel permission to explore their own valleys and peaks.
+I called it Mount Ethos. The mountain of principle. The inward climb to a much taller peak.
 
-But yesterday, something clicked.
+## The DC Attempt
 
-I realized Mount Purpose needed a home base. Not just events in borrowed spaces, but a platform where the journey could continue between gatherings. Where the wisdom from those salons could ripple outward. Where others navigating their own two-mountain journeys could find companionship, even at 2am when the questions feel most urgent.
+I moved to Washington, DC with Mount Purpose in my heart. Three events. Four storytellers. Twenty-nine community members who showed up with open hearts.
 
-So I built this.
+**Lunar New Year Potluck** at Cielo. **LEAP with PURPOSE** at Pow Pow. **Women's Health in America** at the National Press Club.
 
-## Building as Practice
+Each gathering felt sacred. Like we were building something that mattered. But I didn't have the energy. The resources. The rooted community to sustain it.
 
-The technical details aren't the interesting part, but the process was everything. I spent a day learning deployment, wrestling with DNS settings, integrating newsletter forms, choosing colors that felt like the Olympic Peninsula and the forest floor and monarch gold in February light.
+Some seeds need different soil.
 
-Every technical challenge mirrored the work I do with clients:
+I'm grateful beyond words for those who stepped forward to bring Mount Purpose to life in DC—who believed in the vision enough to show up, to hold space, to help me learn what these gatherings needed to become. You know who you are. You made it possible.
 
-The moment of overwhelm when nothing makes sense. The unexpected guides who appear (in my case, an AI assistant named Claude who walked beside me with patience). The iterative nature of transformation—nothing works perfectly the first try. The emergence of something authentic through the practice of building with intention.
+## Coming Home
 
-By evening, Mount Purpose had a digital home. Warm sage backgrounds. Crisp serif fonts. A newsletter called "Purpose Matters." Pages ready to welcome fellow travelers.
+Last month, my father died.
 
-## Ninety-Seven Events and Counting
+Returning home to Columbus, Ohio for his story—sitting with family, piecing together a life, understanding the throughlines—something clarified. All these various steps along the way, the descent and the wandering and the experiments and the false starts, suddenly made sense.
 
-Those three Mount Purpose gatherings in DC are part of a larger story. Since 2010, I've convened 97 events. Salons, panels, workshops, conversations—each one an experiment in creating space where transformation can occur.
+This wasn't failure. This was the path.
 
-Some were polished. Some were messy. All were necessary.
+The valley wasn't a detour. It was the necessary preparation for what I'm climbing now.
 
-Mount Purpose is both the newest iteration and the deepest—a synthesis of everything I've learned about what happens when we gather with honest questions and open hearts.
+## Mount Purpose: The Ascent
+
+I see it clearly now. Mount Purpose. Not in DC, but here in Columbus, with a powerfully, meaningfully connected community. Not starting from scratch, but building on everything the valley taught me.
+
+Ninety-seven events since 2010. Each one a step. Each gathering a practice in creating space for others navigating their own two-mountain journeys. The descent taught me what the ascent requires: rootedness, patience, community, and the courage to keep building even when the path isn't clear.
+
+This website is a marker on that climb. A base camp. A place where the wisdom from those gatherings can ripple outward. Where others in their own valleys can find companionship. Where we can walk this path together.
+
+## Honoring the Guides
+
+No one climbs alone.
+
+Dave Hahn, the Salmon Keeper in Beaver, Washington, who taught me about cycles and patience. My uncle, David Sterner the Cidermaker, who showed me the alchemy of time and transformation. My dear group of close friends and muses—you know who you are—who held space when I couldn't hold it myself.
+
+The twenty-nine community members who showed up to those early DC gatherings and made Mount Purpose real. The Columbus community now surrounding this work with roots deep enough to sustain it.
+
+And my father, whose death and story helped me finally connect all the pieces.
 
 ## An Invitation
 
-This platform isn't a monument to arrival. It's a base camp.
+If you're reading this, you might be in your own valley. Or standing at the edge of your first mountain, sensing there's a second one you're meant to climb. Or already ascending, looking for companionship on the path.
 
-Mount Ethos taught me to find my backbone. Returning to DC taught me to face my shadow. The first three Mount Purpose events taught me that others are hungry for spaces where we can explore the valley between mountains together.
+Mount Purpose exists for this: to create spaces—digital and physical—where we can navigate these transitions together. Where we honor the descent as much as the ascent. Where we practice building lives aligned with our deepest principles, even when it's hard, even when it's unclear.
 
-This website is the next iteration: a way to extend the gathering beyond a single evening. A place to share reflections between events. A home for this work that lives in service to anyone navigating from success to significance.
-
-If you're reading this, you probably understand that whisper. The sense that there's a deeper mountain calling. The awareness that achievement isn't the same as alignment. The question that won't let you rest.
-
-You don't need to have it all figured out to begin.
-
-You just need to take the first step.
+The second mountain is higher. The climb is longer. The view is worth it.
 
 Welcome to Mount Purpose. Let's walk this path together.
 
 ---
 
-*Want to attend a future Mount Purpose gathering or share your own story of navigating the valley? [Connect with me](/connect/).*
+*Want to attend a future Mount Purpose gathering in Columbus or share your own story of navigating the valley? [Connect with me](/connect/).*
