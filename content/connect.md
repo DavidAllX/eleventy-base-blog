@@ -50,7 +50,7 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
   
   // Disable button and show loading state
   button.disabled = true;
-  button.textContent = 'Sending Good Vibes...';
+  button.textContent = 'Subscribing...';
   message.style.display = 'none';
   
   try {
@@ -64,9 +64,6 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
         data: {
           type: 'subscription',
           attributes: {
-            list_id: 'TJh6ev',
-            email: email,
-            custom_source: 'Mount Purpose Website',
             profile: {
               data: {
                 type: 'profile',
@@ -75,21 +72,33 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
                   first_name: firstName
                 }
               }
+            },
+            custom_source: 'Mount Purpose Website'
+          },
+          relationships: {
+            list: {
+              data: {
+                type: 'list',
+                id: 'TJh6ev'
+              }
             }
           }
         }
       })
     });
     
-    if (response.ok) {
+    if (response.ok || response.status === 202) {
       message.textContent = '🎉 Welcome! Check your email to confirm your subscription.';
       message.style.color = 'var(--text-color)';
       message.style.display = 'block';
       form.reset();
     } else {
+      const errorData = await response.json();
+      console.error('Klaviyo error:', errorData);
       throw new Error('Subscription failed');
     }
   } catch (error) {
+    console.error('Form error:', error);
     message.textContent = 'Something went wrong. Please try again or email us directly.';
     message.style.color = '#c5534f';
     message.style.display = 'block';
