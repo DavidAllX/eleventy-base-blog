@@ -1,6 +1,6 @@
 ---
-title: From Mount Ethos to Mount Purpose: Building a Platform for the Journey
-description: The story of how a platform for transformation emerged from the Olympic rainforest, through DC salons, to this digital space—and why building it felt like coming home.
+title: "From Mount Ethos to Mount Purpose: Building a Platform for the Journey"
+description: "The story of how a platform for transformation emerged from the Olympic rainforest, through DC salons, to this digital space—and why building it felt like coming home."
 date: 2025-11-29
 tags:
   - journey
