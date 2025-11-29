@@ -24,15 +24,81 @@ Reach out to explore how Mount Purpose can support your journey:
 Receive insights, reflections, and guidance for navigating your two-mountain journey.
 
 <div class="message-box" style="margin: 2em 0;">
-  <h3 style="margin-top: 0;">Subscribe to Purpose Matters</h3>
+  <h3 style="margin-top: 0;">Purpose Matters Newsletter</h3>
   <p>Wisdom for leaders navigating the transition from success to significance.</p>
   
-  <!-- Placeholder for newsletter form - you'll need to add your email service -->
-  <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1em; max-width: 500px;">
-    <input type="email" name="email" placeholder="Your email address" required style="padding: 0.75em; border: 2px solid var(--color-border); border-radius: 4px; font-family: var(--font-family); font-size: 1rem;">
-    <button type="submit" style="padding: 0.75em 1.5em; background-color: var(--color-monarch-gold); color: var(--color-forest-floor); border: none; border-radius: 4px; font-family: var(--font-family-display); font-size: 1rem; font-weight: 600; cursor: pointer;">Subscribe</button>
+  <form class="klaviyo-form" id="newsletter-form" style="display: flex; flex-direction: column; gap: 1.25em; max-width: 500px; margin-top: 1.5em;">
+    <input type="text" name="first_name" placeholder="First Name" required style="padding: 1em; border: 2px solid var(--color-border); border-radius: 4px; font-family: var(--font-family); font-size: 1rem; background-color: rgba(255,255,255,0.9); width: 100%;">
+    
+    <input type="email" name="email" placeholder="Your best email address" required style="padding: 1em; border: 2px solid var(--color-border); border-radius: 4px; font-family: var(--font-family); font-size: 1rem; background-color: rgba(255,255,255,0.9); width: 100%;">
+    
+    <button type="submit" style="padding: 1em 2em; background-color: var(--color-monarch-gold); color: var(--color-forest-floor); border: none; border-radius: 4px; font-family: var(--font-family-display); font-size: 1.125rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s; width: 100%;">Subscribe</button>
+    
+    <p id="form-message" style="margin: 0; font-size: 0.95rem; display: none;"></p>
   </form>
 </div>
+
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const button = form.querySelector('button');
+  const message = document.getElementById('form-message');
+  const firstName = form.querySelector('[name="first_name"]').value;
+  const email = form.querySelector('[name="email"]').value;
+  
+  // Disable button and show loading state
+  button.disabled = true;
+  button.textContent = 'Sending Good Vibes...';
+  message.style.display = 'none';
+  
+  try {
+    const response = await fetch('https://a.klaviyo.com/client/subscriptions/?company_id=U5CBFS', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'revision': '2024-07-15'
+      },
+      body: JSON.stringify({
+        data: {
+          type: 'subscription',
+          attributes: {
+            list_id: 'TJh6ev',
+            email: email,
+            custom_source: 'Mount Purpose Website',
+            profile: {
+              data: {
+                type: 'profile',
+                attributes: {
+                  email: email,
+                  first_name: firstName
+                }
+              }
+            }
+          }
+        }
+      })
+    });
+    
+    if (response.ok) {
+      message.textContent = '🎉 Welcome! Check your email to confirm your subscription.';
+      message.style.color = 'var(--text-color)';
+      message.style.display = 'block';
+      form.reset();
+    } else {
+      throw new Error('Subscription failed');
+    }
+  } catch (error) {
+    message.textContent = 'Something went wrong. Please try again or email us directly.';
+    message.style.color = '#c5534f';
+    message.style.display = 'block';
+  } finally {
+    button.disabled = false;
+    button.textContent = 'Subscribe';
+  }
+});
+</script>
 
 ---
 
