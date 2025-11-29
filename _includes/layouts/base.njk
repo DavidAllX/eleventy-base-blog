@@ -51,14 +51,15 @@
   </h1>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
+		<nav>
+	<h2 class="visually-hidden">Top level navigation menu</h2>
+	<ul class="nav">
+		<li class="nav-item"><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
+		<li class="nav-item"><a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
+		<li class="nav-item"><a href="/connect/"{% if page.url == "/connect/" %} aria-current="page"{% endif %}>Connect</a></li>
+		<li class="nav-item"><a href="/events/"{% if page.url.startsWith("/events") %} aria-current="page"{% endif %}>Events & Media</a></li>
+	</ul>
+</nav>
 		</header>
 
 		<main id="main">
