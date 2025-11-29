@@ -13,7 +13,7 @@ Whether you're beginning to sense there's a deeper mountain ahead, or you're rea
 
 Reach out to explore how Mount Purpose can support your journey:
 
-**Email:** [david@davidall.com](mailto:david@davidall.com)
+**Email:** [connect@mountpurpose.com](mailto:connect@mountpurpose.com)
 
 **LinkedIn:** [Connect with David All](https://www.linkedin.com/in/davidall/)
 
