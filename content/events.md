@@ -77,21 +77,32 @@ The most profound wisdom often comes through lived experience, honestly shared.
 
 ---
 
-## Belly of the Beast: Life Stories
+## Belly of the Beast Life Stories with David All
 
 <div style="padding: 2em; background-color: var(--background-secondary); border-radius: 8px; border-left: 4px solid var(--color-accent); margin: 2em 0;">
   <h3 style="margin-top: 0;">A Podcast About Transformation</h3>
-  <p><strong>Belly of the Beast: Life Stories with David All</strong> explores the unwanted changes that trigger major transformations in life—the caterpillar to chrysalis (monarch gold!) to butterfly moments that remake us.</p>
+  <p><strong>Belly of the Beast Life Stories with David All</strong> explores the unwanted changes that trigger major transformations in life—the caterpillar to chrysalis (monarch gold!) to butterfly moments that remake us.</p>
   
-  <p>Through intimate conversations and personal storytelling, the podcast examines what happens when life breaks us open: divorce, death, addiction, loss, crisis. The moments we didn't choose but that chose us.</p>
+  <p>Through intimate conversations and personal storytelling, the podcast examines what happens when life breaks us open: abandonment, death, addiction, health, loss, crisis. The moments we didn't choose but that chose us.</p>
   
   <p><strong>Season 3: Fatherlessness</strong><br>
-  Following the recent death of David's father, Season 3 explores the terrain of fatherlessness—what it means to lose a father, to never have had one, to become one, or to navigate the complex inheritance of father wounds and father gifts.</p>
+  Following the recent death of David's father, Donald, Season 3 continues to explore the terrain of fatherlessness—what it means to lose a father, to never have had one, to become one, or to navigate the complex inheritance of father wounds and father gifts.</p>
   
   <p style="margin-bottom: 0;"><em>The podcast emerged from David's own journey through the valley—before he had language for the two-mountain framework, he was living the transformation.</em></p>
 </div>
 
-**Listen:** [Podcast link coming soon]
+### Listen Now
+
+<div style="margin: 2em 0;">
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/belly-of-the-beast-life-stories-with-david-all/id1476989899"></iframe>
+</div>
+
+**Also available on:**
+- [Spotify](https://open.spotify.com/show/0CvCuajHmN4XL3HShFwemG)
+- [Amazon Music](https://music.amazon.com/podcasts/3aabe20a-9a46-45a7-97f3-d746aa60c6e8/belly-of-the-beast-life-stories-with-david-all)
+- [RSS Feed](https://anchor.fm/s/efe7eb00/podcast/rss)
+- And wherever you listen to podcasts
+
 
 ---
 
