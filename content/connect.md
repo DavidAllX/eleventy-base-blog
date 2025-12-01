@@ -1,7 +1,7 @@
 ---js
 const eleventyNavigation = {
   key: "Connect",
-  order: 3
+  order: 6
 };
 ---
 
