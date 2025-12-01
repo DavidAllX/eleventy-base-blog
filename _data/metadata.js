@@ -5,7 +5,7 @@ export default {
 	description: "We guide purpose-driven leaders and organizations through their most significant transitions - from achieving success to discovering deeper meaning and lasting impact.",
 	author: {
 		name: "David All",
-		email: "david@davidall.com",
+		email: "connect@mountpurpose.com",
 		url: "https://davidall.com"
 	}
 }
