@@ -3,27 +3,92 @@ const eleventyNavigation = {
 	key: "Home",
 	order: 1
 };
-
 const numberOfLatestPostsToShow = 3;
 ---
+
+<div style="text-align: center; padding: 3em 0 2em 0;">
+  <h1 style="font-size: 2.5rem; margin-bottom: 0.5em; line-height: 1.2;">Guiding Leaders From Success to Significance</h1>
+  <p style="font-size: 1.25rem; color: var(--text-color-secondary); max-width: 700px; margin: 0 auto 2em auto; line-height: 1.6;">You've climbed the first mountain. Now there's a deeper journey calling—one that transforms achievement into lasting impact and aligns your work with your deepest purpose.</p>
+  <a href="/connect/" style="display: inline-block; padding: 1em 2.5em; background-color: var(--color-monarch-gold); color: var(--color-forest-floor); text-decoration: none; border-radius: 4px; font-family: var(--font-family-display); font-size: 1.125rem; font-weight: 600; transition: background-color 0.2s;">Begin the Conversation</a>
+</div>
+
+<hr style="border: none; border-top: 1px solid var(--color-border); margin: 3em 0;">
+
+<h2>Where Are You on the Journey?</h2>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2em; margin: 3em 0;">
+  <div style="padding: 1.5em; background-color: var(--background-secondary); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+    <h3 style="margin-top: 0; font-size: 1.3rem;">Climbing the First Peak</h3>
+    <p style="margin-bottom: 0;">Building your career, scaling your venture, proving what you're capable of. The metrics say you're winning, but something feels incomplete.</p>
+  </div>
+  
+  <div style="padding: 1.5em; background-color: var(--background-secondary); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+    <h3 style="margin-top: 0; font-size: 1.3rem;">In the Valley</h3>
+    <p style="margin-bottom: 0;">You've walked away from what no longer fits. The path ahead isn't clear yet. This descent is disorienting—and necessary. You're not lost, you're becoming.</p>
+  </div>
+  
+  <div style="padding: 1.5em; background-color: var(--background-secondary); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+    <h3 style="margin-top: 0; font-size: 1.3rem;">Seeing the Second Mountain</h3>
+    <p style="margin-bottom: 0;">You know there's a deeper climb ahead—one built on purpose, not just performance. You need guidance, community, and practical tools for this different kind of ascent.</p>
+  </div>
+</div>
+
+<p style="text-align: center; margin: 2em 0;"><a href="/journey/">Learn more about the two-mountain journey →</a></p>
+
+<hr style="border: none; border-top: 1px solid var(--color-border); margin: 3em 0;">
+
+<h2>How We Work Together</h2>
+
+<p>Whether you're an individual leader navigating transition or an organization seeking to align mission with action, Mount Purpose provides guidance, frameworks, and community for the journey.</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2em; margin: 2em 0;">
+  <div>
+    <h3 style="font-size: 1.2rem;">Individual Guidance</h3>
+    <p>One-on-one support for leaders navigating career transitions, purpose alignment, and the second-mountain journey.</p>
+    <p><a href="/work/">Explore individual work →</a></p>
+  </div>
+  
+  <div>
+    <h3 style="font-size: 1.2rem;">Organizational Consulting</h3>
+    <p>Strategic guidance for teams and organizations seeking to align culture, mission, and impact with authentic purpose.</p>
+    <p><a href="/work/">Explore organizational work →</a></p>
+  </div>
+  
+  <div>
+    <h3 style="font-size: 1.2rem;">Gatherings & Events</h3>
+    <p>Curated spaces for leaders to explore transformation together. 97 events since 2010, creating community for the journey.</p>
+    <p><a href="/events/">See upcoming events →</a></p>
+  </div>
+</div>
+
+<hr style="border: none; border-top: 1px solid var(--color-border); margin: 3em 0;">
+
+<h2>Latest Insights</h2>
+
+<p style="font-style: italic; color: var(--text-color-secondary);">Recent reflections, resources, and wisdom for the two-mountain journey.</p>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
-
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 {% include "postslist.njk" %}
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
-{% endif %}
+<p><a href="/blog/">Explore all resources →</a></p>
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+<hr style="border: none; border-top: 1px solid var(--color-border); margin: 3em 0;">
+
+<h2>Community Wisdom</h2>
+
+<div style="padding: 2em; background-color: var(--background-secondary); border-left: 4px solid var(--color-accent); font-style: italic; margin: 2em 0;">
+  <p style="font-size: 1.1rem; margin: 0;">"The most transformational moments happen when leaders gather with honest questions and open hearts. That's what we create space for."</p>
+  <p style="margin: 1em 0 0 0; font-size: 0.95rem; color: var(--text-color-secondary);">— David All, Founder</p>
+</div>
+
+<hr style="border: none; border-top: 1px solid var(--color-border); margin: 3em 0;">
+
+<h2>Stay Connected</h2>
+
+<div style="text-align: center; padding: 2em 0;">
+  <p style="font-size: 1.1rem; margin-bottom: 1em;">Receive monthly wisdom for leaders navigating the transition from success to significance.</p>
+  <a href="/connect/" style="display: inline-block; padding: 0.875em 2em; background-color: var(--color-accent); color: var(--background-color); text-decoration: none; border-radius: 4px; font-weight: 600; transition: background-color 0.2s;">Subscribe to Purpose Matters</a>
+</div>
