@@ -15,11 +15,19 @@ Reach out to explore how Mount Purpose can support your journey:
 
 **Email:** [connect@mountpurpose.com](mailto:connect@mountpurpose.com)
 
-**LinkedIn:** [Connect with David All](https://www.linkedin.com/in/davidall/)
-
 ---
 
 ## Join Our Community
+
+Stay connected between gatherings, get early access to events, and join conversations with fellow travelers on the two-mountain journey.
+
+**[Join Mount Purpose Community on Fabric →](https://mountpurpose.fabricapp.co)**
+
+Fabric blends text messaging with event updates and community chat—making it easy to stay in the loop without another app to download.
+
+---
+
+## Subscribe to Purpose Matters
 
 Receive insights, reflections, and guidance for navigating your two-mountain journey.
 
