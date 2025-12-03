@@ -83,23 +83,31 @@ David stumbled. He tried climbing smaller mountains, attempting to regain what w
 
 Through all of this—the creating, the consulting, the connecting—David was learning the topography of transformation. He was discovering what it means to descend from one mountain and begin the climb toward another.
 
-### Mount Ethos: Finding the Backbone
+### Mount Ethos: Feeling Purpose
 
-During COVID, David found himself on the Olympic Peninsula in Washington—surrounded by ancient rainforest and mountains that dwarf human ambition. In that liminal space, with guides like Dave Hahn the Salmon Keeper and his uncle David Sterner the Cidermaker, something crystallized.
+During COVID, David found himself on the Olympic Peninsula in Washington—surrounded by ancient rainforest and mountains that dwarf human ambition. In that liminal space, while volunteering to help ensure the salmon can achieve their purpose to give life with a guide named Dave Hahn the [Salmon Keeper](https://youtu.be/cC0FXXhUsa8), something crystallized.
 
-He called it Mount Ethos: the mountain of principle. The inward climb to a much taller peak. Not built on achievement, but on alignment.
+He called it Mount Ethos: the mountain of principle. The inward climb to a much taller peak. Not built on achievement, but on alignment with your character. Ethos, or reputation and backbone of the individual, is what Aristotle long ago noted as the most persuasive mode of communication. And it's what he called his consulting company.
 
 ### Mount Purpose: The Ascent
 
-David returned to Washington, D.C., attempting to give Mount Purpose roots. He hosted three gatherings in early 2024—Lunar New Year Potluck, LEAP with PURPOSE, Women's Health in America—elevating four storytellers and connecting 29 community members.
+After COVID, David returned to Washington, D.C., attempting to bring Washington back together. He created FOUND3R to [shift the narrative about blockchain technology](https://www.decential.io/articles/found3r-town-hall-in-new-york-has-a-simple-message-web3-is-only-getting-started) and created Mount Purpose to bring a community of changemakers together. He hosted three gatherings in early 2024—Lunar New Year Potluck, LEAP with PURPOSE, Women's Health in America at the National Press Club—elevating four storytellers and connecting 29 community members.
 
 The events were powerful. But the soil wasn't right.
 
-When his father died, David returned home to Columbus, Ohio. Sitting with family, piecing together a life, understanding the throughlines—everything clarified.
+At the moment David realized he had to leave Washington, DC, his uncle, Dr. David C. Sterner, reached out and invited him to move up to his 110-acre farm near State College, Pennsylvania with a goal of getting a fresh perspective (a "sabbatical" as his uncle framed it) while helping the family bring their [apple cider wine business](https://lscider.com) to life. Over 18-months, David succeeded in both goals. In 2025, David was named a finalist for the Happy Valley Adventure Bureau's Rising Star Award in hospitality, recognizing his unique approach to creating transformational gathering spaces for the family business.
 
-Mount Purpose wasn't meant for D.C. It was meant for Columbus, where David has a deeply rooted community. Where he can build something sustainable. Where the 97 events he's convened since 2010—elevating 342 storytellers and connecting 5,725 participants at venues like the National Press Club, Guggenheim Museum, Postmasters Gallery, Bright Moments NYC, Columbus Museum of Art, and The Capital Factory in Austin—can grow into something even more meaningful.
+This 18-month sabbatical once again provided space to slow down. To be creative. To have a deeper commune with family, nature and his inner world. He developed new meditation practices, gratitude techniques and grieving rituals. New ideas and methods that he aims to explore more deeply in community and through individual work.
 
-In 2025, David was named a finalist for the Happy Valley Adventure Bureau's Rising Star Award in hospitality, recognizing his unique approach to creating transformational gathering spaces.
+When his father died in October 2025, David returned home to Columbus, Ohio. Sitting with family, piecing together a life, understanding the throughlines—everything clarified. Through the experience of leading his [father's honorable exit from this plane](https://www.dignitymemorial.com/obituaries/columbus-oh/donald-seeger-12567204) and discovered the final missing pieces to understand the man his father was and the shared sense of duty and honor which guides him.
+
+As David reconnected with his beloved community, for the first time he heard about the impact of his work directly from those that had either shared their story at one of his events or was otherwise meaningfully impacted. The seeds he planted had become an orchard.
+
+Mount Purpose wasn't meant for D.C. It was meant for Columbus, where David has a deeply rooted community. Where he can build something sustainable. Where the 97 events he's convened since 2010 at venues like the National Press Club, Guggenheim Museum, Postmasters Gallery, Bright Moments NYC, Columbus Museum of Art, and The Capital Factory in Austin—can grow into something even more meaningful.
+
+In this context, Mount Purpose was born again. It started as so many things do in his life, with words filling a page. Those four words: Wisdom. Love. Healing. Community.
+
+And the climb up has begun. Let's go.
 
 ---
 
@@ -132,6 +140,8 @@ Mount Purpose isn't theoretical. When necessary, David delivers: LinkedIn update
 - Video production and storytelling
 
 This isn't about doing all the work like an agency. It's about high-level leaders knowing they're working with someone who can operate at every level—from strategy to execution—while keeping the focus on purpose alignment and transformational impact.
+
+Tiny alignments, a single word change, makes all the difference.
 
 ---
 
