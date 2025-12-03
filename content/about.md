@@ -1,8 +1,9 @@
----js
-const eleventyNavigation = {
-  key: "About",
+---
+title: About
+description: The story of how walking away from the summit led to discovering a deeper mountain—and why that journey makes all the difference in guiding others.
+eleventyNavigation:
+  key: About
   order: 2
-};
 ---
 
 # About Mount Purpose
@@ -18,18 +19,140 @@ Just as every mountain has its unique path, we help you navigate your distinct j
 
 Whether you're scaling your first peak of success or sensing there's a greater mountain ahead, Mount Purpose provides the expertise, tools, and wisdom to help you chart your course and lead with authentic purpose.
 
-## Our Philosophy
-
-We believe every leader and organization carries a unique potential for transformation. Our role is to help you discover, navigate, and realize that potential—turning transition into transcendence, and purpose into practice.
-
-## Your Guide
-
-**David All** founded Mount Purpose to help leaders navigate the often-overlooked transitions between achievement and meaning. With decades of experience in both entrepreneurship and purpose-driven ventures, David understands the terrain of transformation firsthand.
-
-His work has been featured in [Columbus Monthly](https://www.columbusmonthly.com/story/entertainment/human-interest/2017/08/02/people-to-watch-david-all/20031290007/) and includes groundbreaking initiatives like the [Recovery Deserts Project](https://www.columbusmonthly.com/story/entertainment/human-interest/2021/05/13/recovery-deserts-project-gets-academic-backing-ohio-state-study/5075166001/), which received academic backing from Ohio State University.
-
-[Connect with David on LinkedIn](https://www.linkedin.com/in/davidall/)
+We believe every leader and organization carries a unique potential for transformation. Our role is to help you discover, navigate, and realize that potential.
 
 ---
 
-*Ready to begin your journey? Reach out to explore how Mount Purpose can support your transformation.*
+## The Guide: David All
+
+David's journey exemplifies the two-mountain path he now helps others navigate.
+
+### The First Mountain: Scaling Heights in Politics & Digital Media
+
+David climbed his first mountain fast and high.
+
+At 22, he managed a congressional campaign. By his late twenties, he'd served as speechwriter for the U.S. Senate, communications director for House Leadership, and communications director for a Senate race in Michigan.
+
+But David saw something others didn't: the intersection of politics and emerging technology. He pioneered the use of social media, blogging, and YouTube on Capitol Hill—becoming one of the first to harness interactive strategies on the campaign trail. He was recognized internationally as "Top 10 Changing the World of Internet and Politics" in Paris.
+
+His commentary appeared on NPR, CNN, Fox News, MSNBC, ABC, CBS, NBC, and C-SPAN. His thought leadership was published in The New York Times, Politico, Washington Post, PR News, and Huffington Post.
+
+In 2005, he founded David All Group, the first social media agency in Washington, D.C. Working with global leaders in elected office, campaigns, governments, and Fortune 500 companies including Google, Intel, HP, Lenovo, and major organizations like Burning Man, PhRMA, American Beverage Association, and the Consumer Electronics Association. Major media outlets were calling him **"Karl Rove 2.0."**
+
+By the time the business hit $4.6 million in annual revenue, David was at the summit. All doors were open. His credibility was at its peak.
+
+And that's when he heard the whisper.
+
+### The Descent: Choosing Purpose Over Power
+
+*"I always saw myself more as a unifier. Ultimately, I left [politics] because I'm not a divisive person. I didn't want to use these superpowers to be divisive."*  
+— David All, The Washington Post
+
+At the height of his success, David made a choice that baffled his peers: he walked away.
+
+Not because of failure. Not because of scandal. But because the work no longer aligned with who he was becoming. The business that brought him to the summit couldn't take him where he needed to go.
+
+[As Columbus Monthly reported](https://www.columbusmonthly.com/story/entertainment/human-interest/2017/08/02/people-to-watch-david-all/20031290007/), the decision came with a cost. Partnership disagreements. The business evaporating. Societal pressure suggesting he'd made the biggest mistake of his life.
+
+For the first time, David wasn't in control. He had entered the valley.
+
+### The Valley: Stumbling, Creating, Discovering
+
+The valley was long. And dark. And generative.
+
+David stumbled. He tried climbing smaller mountains, attempting to regain what was lost rather than moving toward what was calling. Each attempt taught him something the first mountain never could.
+
+**He created Civichacks**, inspired by Barack Obama's National Day of Civic Hacking, organizing 35+ events including Startup Storytellers and Test City Storytellers.
+
+**He became a consultant** for organizations like the Better Business Bureau and Ohio nonprofits, guiding them through their own transformations.
+
+**He launched Belly of the Beast: Life Stories**, a podcast exploring the unwanted changes that trigger major transformations. The caterpillar to chrysalis to butterfly moments. He needed to hear from others—to know he wasn't alone.
+
+**He reconnected with his father** at age 36, building a meaningful relationship after years apart. A story of love, forgiveness, and the stubbornness required to bridge a decades-long divide. His father's recent death became a clarifying moment, helping David understand the throughline of his own journey.
+
+**He co-created a substance abuse clinic** in an underserved community, which led to discovering "Recovery Deserts"—areas without adequate addiction treatment resources. David guided stakeholders to bring his vision to life through their talents and energy. In 2021, [the groundbreaking research was published](https://www.columbusmonthly.com/story/entertainment/human-interest/2021/05/13/recovery-deserts-project-gets-academic-backing-ohio-state-study/5075166001/) with backing from Ohio State University. His leadership on the opioid epidemic earned him recognition as ["Person to Watch"](https://www.columbusmonthly.com/story/entertainment/human-interest/2017/08/02/people-to-watch-david-all/20031290007/) in Columbus, Ohio.
+
+**He led the Franklin County Opiate Task Force** to create the first deliverable from their action plan: a resource pocket card for pregnant mothers seeking addiction support. Simple, well-designed, current information—surprisingly hard to find.
+
+**He brought to life a blockchain product** named by Coinbase and HeroX a "Blockchain Breakthrough for a Better World."
+
+**He worked with Olympic Silver Medalist Dr. Abby Johnston McGrath**, helping her craft and deliver a keynote that wove together her roles as elite athlete, medical doctor, and mother.
+
+*"David made the story-building process fun and taught me skills that I know will help in all facets of life. If you have a need in your life to be in touch with your personal story, work with David, he'll help you achieve your goals with professionalism and grace."*  
+— Dr. Abby Johnston McGrath, Olympic Silver Medalist, Diving, Team USA
+
+Through all of this—the creating, the consulting, the connecting—David was learning the topography of transformation. He was discovering what it means to descend from one mountain and begin the climb toward another.
+
+### Mount Ethos: Finding the Backbone
+
+During COVID, David found himself on the Olympic Peninsula in Washington—surrounded by ancient rainforest and mountains that dwarf human ambition. In that liminal space, with guides like Dave Hahn the Salmon Keeper and his uncle David Sterner the Cidermaker, something crystallized.
+
+He called it Mount Ethos: the mountain of principle. The inward climb to a much taller peak. Not built on achievement, but on alignment.
+
+### Mount Purpose: The Ascent
+
+David returned to Washington, D.C., attempting to give Mount Purpose roots. He hosted three gatherings in early 2024—Lunar New Year Potluck, LEAP with PURPOSE, Women's Health in America—elevating four storytellers and connecting 29 community members.
+
+The events were powerful. But the soil wasn't right.
+
+When his father died, David returned home to Columbus, Ohio. Sitting with family, piecing together a life, understanding the throughlines—everything clarified.
+
+Mount Purpose wasn't meant for D.C. It was meant for Columbus, where David has a deeply rooted community. Where he can build something sustainable. Where the 97 events he's convened since 2010—elevating 342 storytellers and connecting 5,725 participants at venues like the National Press Club, Guggenheim Museum, Postmasters Gallery, Bright Moments NYC, Columbus Museum of Art, and The Capital Factory in Austin—can grow into something even more meaningful.
+
+In 2025, David was named a finalist for the Happy Valley Adventure Bureau's Rising Star Award in hospitality, recognizing his unique approach to creating transformational gathering spaces.
+
+---
+
+## What Makes This Work Different
+
+David doesn't just understand the two-mountain journey intellectually. He's lived it—the summit, the descent, the valley, the emergence of a second peak.
+
+More importantly, he brings **two decades of elite-level capability** to the work:
+
+### Strategic Communications & Storytelling
+From Capitol Hill to Olympic athletes, David has crafted narratives and guided delivery for the highest-stakes moments. He understands how tiny adjustments in an email to your board, the framing of a campaign message, or the structure of a TED talk can transform impact.
+
+### Digital Strategy & Reputation
+As a pioneer in digital politics and social media strategy, David monitors the ambient reputation of leaders navigating transition—ensuring you don't lose ground or get distracted during vulnerable moments.
+
+### Organizational Transformation
+From Better Business Bureau to Ohio Living to substance abuse clinics to global communities like Burning Man, David has guided organizations through profound transitions. Most effective when invited to serve as advisor to CEOs on all aspects of their personal story and professional sphere of influence—always focusing on alignment between mission and action.
+
+### Actionable Deliverables
+Mount Purpose isn't theoretical. When necessary, David delivers: LinkedIn updates, pitch decks, keynote speeches, communication strategies, board messaging, website content, advocacy campaigns—whatever serves your journey.
+
+**Capabilities include:**
+- Brand architecture and positioning
+- Content strategy and creation
+- Event design and facilitation
+- High-stakes presentation coaching
+- Digital presence and automation
+- Public affairs and thought leadership
+- Reputation management
+- Video production and storytelling
+
+This isn't about doing all the work like an agency. It's about high-level leaders knowing they're working with someone who can operate at every level—from strategy to execution—while keeping the focus on purpose alignment and transformational impact.
+
+---
+
+## The Philosophy
+
+David believes transformation doesn't happen in isolation. It happens when we gather with honest questions, open hearts, and the courage to witness each other's becoming.
+
+Mount Purpose creates those spaces—through one-on-one guidance, organizational consulting, and carefully curated gatherings where leaders explore the terrain between mountains together.
+
+The work is rooted in a simple truth: **the valley isn't failure. It's preparation for a different kind of climb.**
+
+---
+
+## Connect With David
+
+**Email:** [connect@mountpurpose.com](mailto:connect@mountpurpose.com)
+
+**LinkedIn:** [Connect with David All](https://www.linkedin.com/in/davidall/)
+
+**Community:** [Join Mount Purpose on Fabric](https://mountpurpose.fabricapp.co)
+
+---
+
+*Ready to begin your journey? [Let's start the conversation](/connect/).*
