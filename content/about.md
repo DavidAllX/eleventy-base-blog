@@ -127,21 +127,41 @@ As a pioneer in digital politics and social media strategy, David monitors the a
 From Better Business Bureau to Ohio Living to substance abuse clinics to global communities like Burning Man, David has guided organizations through profound transitions. Most effective when invited to serve as advisor to CEOs on all aspects of their personal story and professional sphere of influence—always focusing on alignment between mission and action.
 
 ### Actionable Deliverables
-Mount Purpose isn't theoretical. When necessary, David delivers: LinkedIn updates, pitch decks, keynote speeches, communication strategies, board messaging, website content, advocacy campaigns—whatever serves your journey.
 
-**Capabilities include:**
-- Brand architecture and positioning
-- Content strategy and creation
-- Event design and facilitation
-- High-stakes presentation coaching
-- Digital presence and automation
-- Public affairs and thought leadership
-- Reputation management
-- Video production and storytelling
+Mount Purpose isn't theoretical. David works as a trusted advisor to leaders navigating significant transitions—reviewing everything they touch, helping them think through decisions, and ensuring alignment between their evolving purpose and public presence.
 
-This isn't about doing all the work like an agency. It's about high-level leaders knowing they're working with someone who can operate at every level—from strategy to execution—while keeping the focus on purpose alignment and transformational impact.
+**The advisory relationship includes:**
+- Reviewing board communications, speeches, and public-facing materials
+- Advising on reputation and digital presence during transitions
+- Brainstorming thematic concepts for campaigns or initiatives
+- Coaching on high-stakes presentations and delivery
+- Strategic counsel during challenging moments (lawsuits, media storms, organizational crises)
+- Ensuring tiny alignments—the single word change that makes all the difference
 
-Tiny alignments, a single word change, makes all the difference.
+**When needed, David can also:**
+- Connect you with his network of specialists
+- Provide direct support on critical deliverables
+- Help frame and position your next chapter
+
+This isn't about doing the work for you. It's about having someone who understands both the mountain you're climbing and how to communicate from that elevation—someone who can see what you can't see when you're in the middle of the journey.
+
+---
+
+### Beyond the Second Mountain: Legacy & Honorable Exit
+
+David helps leaders think beyond their own journey to the impact that outlasts them. Having recently guided his father's honorable exit and witnessed the power of a well-crafted legacy, he understands what it means to prepare for the third mountain—the one that exists beyond our lifetime.
+
+**Legacy work includes:**
+- Crafting obituaries and farewell narratives that capture a life's true essence
+- Structuring trusts, foundations, and vehicles for lasting impact
+- Identifying and preserving stories that need to be told
+- Creating processes for graceful transitions of leadership and influence
+- Documenting wisdom and principles for future generations
+- Planning honorable exits that reflect a life lived with purpose
+
+Most leaders avoid thinking about their ending. But the leaders who do this work with intention—who prepare their exit as carefully as they climbed—leave something more valuable than wealth or achievement. They leave wisdom, story, and a map for those who follow.
+
+**Tiny alignments, a single word change, makes all the difference—even in how we say goodbye.**
 
 ---
 
