@@ -153,7 +153,7 @@ David helps leaders think beyond their own journey to the impact that outlasts t
 
 **Legacy work includes:**
 - Crafting obituaries and farewell narratives that capture a life's true essence
-- Structuring trusts, foundations, and vehicles for lasting impact
+- Collaborating on trusts, foundations, and vehicles for lasting impact
 - Identifying and preserving stories that need to be told
 - Creating processes for graceful transitions of leadership and influence
 - Documenting wisdom and principles for future generations
