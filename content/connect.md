@@ -107,4 +107,4 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
 
 ---
 
-*Every journey begins with connection.*
+*Every journey begins with connection to purpose.*
