@@ -1,11 +1,13 @@
 /* Message Box */
 .message-box {
-  --color-message-box: #4A5C47; /* Soft green for light mode */
+  --color-message-box: #E8ECE1; /* Light variation for light mode */
 
   display: block;
   background-color: var(--color-message-box);
-  color: #F5F3E8; /* Warm cream text */
+  color: var(--text-color);
   padding: 1em 0.625em; /* 16px 10px /16 */
+  border-left: 4px solid var(--color-accent);
+  margin: 1em 0;
 }
 
 .message-box ol {
@@ -13,12 +15,12 @@
 }
 
 .message-box code {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #F5F3E8;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
 }
 
 .message-box a[href] {
-  color: #F5E6B3; /* Bright cream - highly readable on green */
+  color: #152514; /* Forest floor - dark and readable in light mode */
 }
 
 .message-box a[href]:hover {
@@ -26,12 +28,16 @@
 }
 
 .message-box a[href]:visited {
-  color: #E8D89F; /* Warm gold for visited */
+  color: #2A2A28; /* Dark warm color for visited */
 }
 
 @media (prefers-color-scheme: dark) {
   .message-box {
     --color-message-box: #556B52; /* Slightly lighter green for dark mode */
+  }
+  
+  .message-box code {
+    background-color: rgba(255, 255, 255, 0.1);
   }
   
   .message-box a[href] {
