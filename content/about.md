@@ -181,8 +181,6 @@ The work is rooted in a simple truth: **the valley isn't failure. It's preparati
 
 **LinkedIn:** [Connect with David All](https://www.linkedin.com/in/davidall/)
 
-**Community:** [Join Mount Purpose on Fabric](https://mountpurpose.fabricapp.co)
-
 ---
 
 *Ready to begin your journey? [Let's start the conversation](/connect/).*
