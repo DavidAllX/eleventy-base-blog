@@ -655,9 +655,25 @@ div[style*="border-left: 4px solid var(--color-accent)"]:hover {
 /* Blog Post Container - Better Reading Experience */
 article,
 .post-content {
-	max-width: 42em;
+	max-width: 50em; /* Increased from 42em */
 	margin: 0 auto;
 	line-height: 1.75;
+}
+
+@media (min-width: 1024px) {
+	article,
+	.post-content {
+		max-width: 55em; /* Even wider on desktop */
+	}
+}
+
+/* Better paragraph width */
+article p,
+.post-content p {
+	font-size: 1.125rem;
+	line-height: 1.75;
+	margin-bottom: 1.5em;
+	color: var(--text-color);
 }
 
 /* Hero Title Treatment */
@@ -786,49 +802,58 @@ article strong,
 	width: 100%;
 }
 
-/* Interactive Text Highlighting */
+/* Interactive Text Highlighting - Fixed */
 article p::selection,
 article h2::selection,
 article h3::selection,
 article li::selection,
+article blockquote::selection,
 .post-content p::selection,
 .post-content h2::selection,
 .post-content h3::selection,
-.post-content li::selection {
-	background-color: var(--color-monarch-gold);
-	color: var(--color-forest-floor);
+.post-content li::selection,
+.post-content blockquote::selection {
+	background-color: rgba(197, 179, 88, 0.4);
+	color: var(--text-color);
 }
 
-/* User Highlight Marks (for click-to-highlight feature) */
-.user-highlight {
+/* User Highlight Marks - Clean marker style */
+.user-highlight,
+mark.user-highlight {
 	background: linear-gradient(180deg, 
 		transparent 0%, 
-		transparent 50%, 
-		rgba(197, 179, 88, 0.3) 50%, 
-		rgba(197, 179, 88, 0.3) 100%);
-	padding: 0 0.15em;
+		transparent 65%, 
+		rgba(197, 179, 88, 0.4) 65%, 
+		rgba(197, 179, 88, 0.4) 100%);
+	color: inherit;
+	padding: 0.1em 0;
+	border-radius: 2px;
 	cursor: pointer;
 	transition: background 0.2s ease;
+	display: inline;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
 }
 
-.user-highlight:hover {
+.user-highlight:hover,
+mark.user-highlight:hover {
 	background: linear-gradient(180deg, 
 		transparent 0%, 
-		transparent 50%, 
-		rgba(197, 179, 88, 0.5) 50%, 
-		rgba(197, 179, 88, 0.5) 100%);
+		transparent 65%, 
+		rgba(197, 179, 88, 0.6) 65%, 
+		rgba(197, 179, 88, 0.6) 100%);
 }
 
-/* First Paragraph Drop Cap (Optional - very literary) */
+/* Remove drop cap - it's causing layout issues */
 article > p:first-of-type::first-letter,
 .post-content > p:first-of-type::first-letter {
-	font-family: var(--font-family-display);
-	font-size: 3.5em;
-	line-height: 0.85;
-	float: left;
-	margin: 0.05em 0.1em 0 0;
-	color: var(--color-accent);
-	font-weight: 600;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	float: none;
+	margin: 0;
+	color: inherit;
+	font-weight: inherit;
 }
 
 /* Links in Blog Posts */
