@@ -45,24 +45,85 @@
 	<header>
   <h1 class="home">
     <a href="/">
-      <img src="/img/mount-purpose-logo-mark.png" alt="Mount Purpose" class="logo-light" style="height: 75px; width: auto;">
-      <img src="/img/mount-purpose-logo-mark.png" alt="Mount Purpose" class="logo-dark" style="height: 75px; width: auto;">
+      <img src="/img/mount-purpose-logo-mark.png" alt="Mount Purpose" class="logo-light">
+      <img src="/img/mount-purpose-logo-mark.png" alt="Mount Purpose" class="logo-dark">
     </a>
   </h1>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-	<nav>
-  <h2 class="visually-hidden">Top level navigation menu</h2>
-  <ul class="nav">
-    <li class="nav-item"><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
-    <li class="nav-item"><a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
-    <li class="nav-item"><a href="/blog/"{% if page.url.startsWith("/blog") %} aria-current="page"{% endif %}>Blog</a></li>
-    <li class="nav-item"><a href="/journey/"{% if page.url.startsWith("/journey") %} aria-current="page"{% endif %}>The Journey</a></li>
-    <li class="nav-item"><a href="/work/"{% if page.url.startsWith("/work") %} aria-current="page"{% endif %}>Work With Us</a></li>
-    <li class="nav-item"><a href="/connect/"{% if page.url == "/connect/" %} aria-current="page"{% endif %}>Connect</a></li>
-  </ul>
-</nav>
-		</header>
+  {# Hamburger toggle button #}
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  {# Navigation overlay for mobile #}
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <nav>
+    <h2 class="visually-hidden">Top level navigation menu</h2>
+    <ul class="nav" id="nav-menu">
+      <li class="nav-item"><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
+      <li class="nav-item"><a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
+      <li class="nav-item"><a href="/blog/"{% if page.url.startsWith("/blog") %} aria-current="page"{% endif %}>Blog</a></li>
+      <li class="nav-item"><a href="/journey/"{% if page.url.startsWith("/journey") %} aria-current="page"{% endif %}>Journey</a></li>
+      <li class="nav-item"><a href="/work/"{% if page.url.startsWith("/work") %} aria-current="page"{% endif %}>Work With Us</a></li>
+      <li class="nav-item"><a href="/connect/"{% if page.url == "/connect/" %} aria-current="page"{% endif %}>Connect</a></li>
+    </ul>
+  </nav>
+</header>
+
+{# Hamburger menu JavaScript #}
+<script>
+(function() {
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navOverlay = document.getElementById('nav-overlay');
+  
+  if (navToggle && navMenu && navOverlay) {
+    navToggle.addEventListener('click', function() {
+      const isActive = navMenu.classList.contains('active');
+      
+      if (isActive) {
+        // Close menu
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+        navOverlay.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      } else {
+        // Open menu
+        navMenu.classList.add('active');
+        navToggle.classList.add('active');
+        navOverlay.classList.add('active');
+        navToggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      }
+    });
+    
+    // Close menu when overlay is clicked
+    navOverlay.addEventListener('click', function() {
+      navMenu.classList.remove('active');
+      navToggle.classList.remove('active');
+      navOverlay.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+    
+    // Close menu when a link is clicked
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+        navOverlay.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+})();
+</script>
 
 		<main id="main">
 			<heading-anchors>
