@@ -321,9 +321,10 @@ header {
 }
 
 /* Nav */
+/* Navigation - Small Caps Style */
 .nav {
 	display: flex;
-	gap: .5em 1em;
+	gap: 2rem;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -333,13 +334,159 @@ header {
 	display: inline-block;
 }
 
-.nav-item a[href]:not(:hover) {
+.nav-item a {
+	font-variant: small-caps;
+	font-size: 1.05rem; /* Increased from 0.95rem for better readability */
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
 	text-decoration: none;
+	position: relative;
+	padding: 0.5rem 0.25rem; /* Reduced horizontal padding */
+	display: inline-block;
+	transition: color 0.2s ease;
 }
 
+.nav-item a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0.25rem; /* Match the left padding */
+	right: 0.25rem; /* Match the right padding */
+	height: 2px;
+	background-color: var(--color-accent);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease;
+}
+
+.nav-item a:hover::after,
+.nav a[href][aria-current="page"]::after {
+	transform: scaleX(1);
+}
+
+.nav-item a:hover,
 .nav a[href][aria-current="page"] {
-	text-decoration: underline;
 	color: var(--color-accent);
+}
+
+/* Remove old active page styling */
+.nav a[href][aria-current="page"] {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* Desktop spacing */
+@media (min-width: 768px) {
+	.nav {
+		gap: 2.5rem;
+	}
+	
+	.nav-item a {
+		font-size: 1.1rem; /* Even larger on desktop */
+	}
+}
+
+/* Desktop spacing */
+@media (min-width: 768px) {
+	.nav {
+		gap: 2.5rem;
+	}
+}
+
+/* Enhanced Header Styles */
+header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scrolling for the whole page */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Logo hover effect */
+.home a img {
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.home a:hover img {
+	transform: scale(1.05);
+	opacity: 0.85;
+}
+
+/* Navigation improvements */
+.nav {
+	gap: 0.5em 1.5em; /* More space between items on desktop */
+}
+
+.nav-item a {
+	position: relative;
+	padding: 0.5em 0.75em;
+	border-radius: 4px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	display: inline-block;
+}
+
+/* Hover effect for nav items */
+.nav-item a:hover {
+	background-color: var(--background-color);
+}
+
+/* Active page indicator - animated underline */
+.nav a[href][aria-current="page"] {
+	text-decoration: none;
+	background-color: var(--background-color);
+}
+
+.nav a[href][aria-current="page"]::after {
+	content: '';
+	position: absolute;
+	bottom: 0.25em;
+	left: 0.75em;
+	right: 0.75em;
+	height: 2px;
+	background-color: var(--color-accent);
+	border-radius: 2px;
+}
+
+/* Smooth hover underline for non-active items */
+.nav-item a:not([aria-current="page"])::after {
+	content: '';
+	position: absolute;
+	bottom: 0.25em;
+	left: 50%;
+	right: 50%;
+	height: 2px;
+	background-color: var(--color-accent);
+	border-radius: 2px;
+	transition: left 0.3s ease, right 0.3s ease;
+	opacity: 0;
+}
+
+.nav-item a:not([aria-current="page"]):hover::after {
+	left: 0.75em;
+	right: 0.75em;
+	opacity: 1;
+}
+
+/* Desktop header layout optimization */
+@media (min-width: 768px) {
+	header {
+		padding: 1.25em 2em;
+	}
+	
+	.home a img {
+		height: 85px; /* Slightly larger logo on desktop */
+	}
+	
+	.nav {
+		gap: 1em 2em; /* Even more space on larger screens */
+	}
 }
 
 /* Posts list */
@@ -448,4 +595,353 @@ footer {
 	margin-top: 2em;
 	color: var(--text-color-secondary);
 	font-size: 0.9em;
+}
+/* Desktop Layout Improvements */
+@media (min-width: 1024px) {
+	/* Wider container on large screens */
+	body {
+		max-width: 60em; /* Increased from 40em */
+	}
+}
+
+@media (min-width: 1400px) {
+	/* Even wider on very large screens */
+	body {
+		max-width: 70em;
+	}
+}
+
+/* More breathing room between sections on tablet and up */
+@media (min-width: 768px) {
+	main > hr {
+		margin: 5em 0; /* Increased from 3em */
+	}
+	
+	main > h2 {
+		margin-top: 2em;
+	}
+}
+/* Button hover animations (for CTA buttons throughout site) */
+a[style*="background-color: var(--color-monarch-gold)"],
+a[style*="background-color: var(--color-accent)"],
+button[type="submit"] {
+	transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease !important;
+}
+
+a[style*="background-color: var(--color-monarch-gold)"]:hover,
+a[style*="background-color: var(--color-accent)"]:hover,
+button[type="submit"]:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(197, 179, 88, 0.3);
+	opacity: 0.9;
+}
+
+a[style*="background-color: var(--color-monarch-gold)"]:active,
+a[style*="background-color: var(--color-accent)"]:active,
+button[type="submit"]:active {
+	transform: translateY(0);
+}
+
+/* Card hover effects (for journey/services blocks) */
+div[style*="border-left: 4px solid var(--color-accent)"] {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	cursor: default;
+}
+
+div[style*="border-left: 4px solid var(--color-accent)"]:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* Blog Post Container - Better Reading Experience */
+article,
+.post-content {
+	max-width: 42em;
+	margin: 0 auto;
+	line-height: 1.75;
+}
+
+/* Hero Title Treatment */
+article h1,
+.post-content h1 {
+	font-size: 2.75rem;
+	line-height: 1.15;
+	margin-bottom: 0.5em;
+	margin-top: 0;
+	color: var(--color-forest-floor);
+	font-weight: 700;
+}
+
+@media (max-width: 768px) {
+	article h1,
+	.post-content h1 {
+		font-size: 2rem;
+	}
+}
+
+/* Post Metadata Styling */
+.post-metadata {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	margin: 1.5em 0 3em 0;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid var(--color-border);
+	font-size: 0.9rem;
+	color: var(--text-color-secondary);
+}
+
+.post-metadata li {
+	list-style: none;
+}
+
+.post-metadata time {
+	margin-right: 0;
+	font-style: italic;
+}
+
+/* Better Typography for Blog Content */
+article p,
+.post-content p {
+	font-size: 1.125rem;
+	line-height: 1.75;
+	margin-bottom: 1.5em;
+	color: var(--text-color);
+}
+
+article h2,
+.post-content h2 {
+	font-size: 1.875rem;
+	margin-top: 2.5em;
+	margin-bottom: 0.75em;
+	color: var(--color-forest-floor);
+	font-weight: 600;
+}
+
+article h3,
+.post-content h3 {
+	font-size: 1.375rem;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+	color: var(--text-color);
+	font-weight: 600;
+}
+
+/* Pull Quotes / Highlighted Text */
+article blockquote,
+.post-content blockquote {
+	margin: 2.5em 0;
+	padding: 1.5em 2em;
+	background-color: var(--background-secondary);
+	border-left: 4px solid var(--color-accent);
+	border-radius: 4px;
+	font-size: 1.25rem;
+	font-style: italic;
+	color: var(--text-color);
+	line-height: 1.6;
+}
+
+article blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Emphasis Styling */
+article em,
+.post-content em {
+	font-style: italic;
+	color: var(--text-color);
+}
+
+article strong,
+.post-content strong {
+	font-weight: 600;
+	color: var(--color-forest-floor);
+}
+
+/* Video/Media Embeds */
+.video-embed,
+.media-embed {
+	margin: 3em 0;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.video-embed iframe,
+.media-embed iframe {
+	width: 100%;
+	aspect-ratio: 16/9;
+	border: none;
+}
+
+/* Audio Player Styling */
+.audio-embed {
+	margin: 2em 0;
+	padding: 1.5em;
+	background-color: var(--background-secondary);
+	border-radius: 8px;
+	border-left: 4px solid var(--color-accent);
+}
+
+.audio-embed audio {
+	width: 100%;
+}
+
+/* Interactive Text Highlighting */
+article p::selection,
+article h2::selection,
+article h3::selection,
+article li::selection,
+.post-content p::selection,
+.post-content h2::selection,
+.post-content h3::selection,
+.post-content li::selection {
+	background-color: var(--color-monarch-gold);
+	color: var(--color-forest-floor);
+}
+
+/* User Highlight Marks (for click-to-highlight feature) */
+.user-highlight {
+	background: linear-gradient(180deg, 
+		transparent 0%, 
+		transparent 50%, 
+		rgba(197, 179, 88, 0.3) 50%, 
+		rgba(197, 179, 88, 0.3) 100%);
+	padding: 0 0.15em;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.user-highlight:hover {
+	background: linear-gradient(180deg, 
+		transparent 0%, 
+		transparent 50%, 
+		rgba(197, 179, 88, 0.5) 50%, 
+		rgba(197, 179, 88, 0.5) 100%);
+}
+
+/* First Paragraph Drop Cap (Optional - very literary) */
+article > p:first-of-type::first-letter,
+.post-content > p:first-of-type::first-letter {
+	font-family: var(--font-family-display);
+	font-size: 3.5em;
+	line-height: 0.85;
+	float: left;
+	margin: 0.05em 0.1em 0 0;
+	color: var(--color-accent);
+	font-weight: 600;
+}
+
+/* Links in Blog Posts */
+article a[href],
+.post-content a[href] {
+	color: var(--text-color-link);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+	transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+article a[href]:hover,
+.post-content a[href]:hover {
+	color: var(--color-accent);
+	text-decoration-color: var(--color-accent);
+}
+
+/* Lists in Blog Posts */
+article ul,
+article ol,
+.post-content ul,
+.post-content ol {
+	margin: 1.5em 0;
+	padding-left: 2em;
+}
+
+article li,
+.post-content li {
+	margin-bottom: 0.75em;
+	line-height: 1.7;
+}
+
+/* Horizontal Rules */
+article hr,
+.post-content hr {
+	margin: 3em 0;
+	border: none;
+	border-top: 2px solid var(--color-border);
+	opacity: 0.5;
+}
+
+/* Image Captions */
+article figure,
+.post-content figure {
+	margin: 2.5em 0;
+}
+
+article figcaption,
+.post-content figcaption {
+	margin-top: 0.75em;
+	font-size: 0.9rem;
+	font-style: italic;
+	color: var(--text-color-secondary);
+	text-align: center;
+}
+
+/* Next/Previous Navigation Enhancement */
+.links-nextprev {
+	margin-top: 4em;
+	padding-top: 2em;
+	border-top: 2px solid var(--color-border);
+}
+
+.links-nextprev li {
+	padding: 1em;
+	background-color: var(--background-secondary);
+	border-radius: 8px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.links-nextprev li:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links-nextprev a {
+	font-family: var(--font-family-display);
+	font-weight: 600;
+	font-size: 1.1rem;
+	text-decoration: none;
+}
+
+.links-nextprev a:hover {
+	color: var(--color-accent);
+}
+
+/* Reading Progress Indicator (Optional) */
+.reading-progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 3px;
+	background: linear-gradient(90deg, var(--color-accent), var(--color-monarch-gold));
+	z-index: 1000;
+	transition: width 0.1s ease;
+}
+
+/* Dark Mode Adjustments */
+@media (prefers-color-scheme: dark) {
+	article h1,
+	.post-content h1 {
+		color: var(--text-color);
+	}
+	
+	article h2,
+	.post-content h2 {
+		color: var(--text-color);
+	}
+	
+	article strong,
+	.post-content strong {
+		color: var(--text-color);
+	}
 }

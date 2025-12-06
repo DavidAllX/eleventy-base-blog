@@ -23,18 +23,18 @@ In your note, tell us briefly where you are on your journey. If there's alignmen
 
 Receive wisdom for the journey when it arrives.
 
-<div style="padding: 2em; background-color: #E8ECE1; border-radius: 8px; border-left: 4px solid var(--color-accent); margin: 2em 0;">
-  <h3 style="margin-top: 0; color: var(--color-forest-floor); font-size: 1.3rem;">Purpose Matters</h3>
-  <p style="color: var(--text-color); margin-bottom: 1.5em;">Reflections for leaders navigating the transition from success to significance.</p>
+<div style="padding: 2em; background-color: var(--background-secondary); border-radius: 8px; border-left: 4px solid var(--color-accent); margin: 2em 0;">
+  <h3 style="margin-top: 0; color: var(--text-color); font-size: 1.3rem;">Purpose Matters</h3>
+  <p style="color: var(--text-color-secondary); margin-bottom: 1.5em;">Reflections for leaders navigating the transition from success to significance.</p>
   
   <form class="klaviyo-form" id="newsletter-form" style="display: flex; flex-direction: column; gap: 1.25em; max-width: 500px;">
-    <input type="text" name="first_name" placeholder="First Name" required style="padding: 1em; border: 2px solid var(--color-border); border-radius: 4px; font-family: var(--font-family); font-size: 1rem; background-color: #FFFFFF; color: var(--color-forest-floor); width: 100%;">
+    <input type="text" name="first_name" placeholder="First Name" required style="padding: 1em; border: 2px solid var(--color-border); border-radius: 4px; font-family: var(--font-family); font-size: 1rem; background-color: var(--background-color); color: var(--text-color); width: 100%;">
     
-    <input type="email" name="email" placeholder="Your email address" required style="padding: 1em; border: 2px solid var(--color-border); border-radius: 4px; font-family: var(--font-family); font-size: 1rem; background-color: #FFFFFF; color: var(--color-forest-floor); width: 100%;">
+    <input type="email" name="email" placeholder="Your email address" required style="padding: 1em; border: 2px solid var(--color-border); border-radius: 4px; font-family: var(--font-family); font-size: 1rem; background-color: var(--background-color); color: var(--text-color); width: 100%;">
     
-    <button type="submit" style="padding: 1em 2em; background-color: var(--color-monarch-gold); color: var(--color-forest-floor); border: none; border-radius: 4px; font-family: var(--font-family-display); font-size: 1.125rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s; width: 100%;">Subscribe</button>
+    <button type="submit" style="padding: 1em 2em; background-color: var(--color-monarch-gold); color: var(--color-forest-floor); border: none; border-radius: 4px; font-family: var(--font-family-display); font-size: 1.125rem; font-weight: 600; cursor: pointer; width: 100%;">Subscribe</button>
     
-    <p id="form-message" style="margin: 0; font-size: 0.95rem; display: none;"></p>
+    <p id="form-message" style="margin: 0; font-size: 0.95rem; display: none; color: var(--text-color);"></p>
   </form>
 </div>
 
@@ -88,7 +88,7 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
     
     if (response.ok || response.status === 202) {
       message.textContent = '🎉 Welcome. Check your email to confirm.';
-      message.style.color = 'var(--text-color)';
+      message.style.color = 'var(--color-accent)';
       message.style.display = 'block';
       form.reset();
     } else {

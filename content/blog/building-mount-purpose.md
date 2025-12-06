@@ -9,7 +9,7 @@ tags:
   - mount-ethos
 ---
 
-Mount Purpose didn't begin when I launched this website yesterday. It didn't even begin with the three gatherings I hosted in DC earlier this year.
+Mount Purpose didn't begin when I launched this website. It didn't even begin with the three gatherings I hosted in DC in 2024.
 
 It began the day I walked away from my first mountain.
 
@@ -35,51 +35,41 @@ The valley is long. And dark. And necessary.
 
 During Covid, I found myself on the Olympic Peninsula in Washington—in Beaver, a place so small it barely exists on maps. Ancient rainforest. Mountains that dwarf human ambition. And Dave Hahn, the Salmon Keeper, who understood something about cycles and seasons and the patience required for transformation.
 
-My uncle, David Sterner the Cidermaker, knew it too—that some fruits need time to ferment, to become something richer than their original form.
+In that liminal space, surrounded by old growth forest, I felt something shift. Not a return to the first mountain, but the first glimpse of a second one. Higher. Different. Built not on achievement but on alignment.
 
-In that liminal space, surrounded by those who understood the long work of becoming, I felt something shift. Not a return to the first mountain, but the first glimpse of a second one. Higher. Different. Built not on achievement but on alignment.
+I called it Mount Ethos. A metaphor. The mountain of principle. The inward climb to a much taller peak.
 
-I called it Mount Ethos. The mountain of principle. The inward climb to a much taller peak.
+## The DC Look Back
 
-## The DC Attempt
+I moved back to Washington, DC with purpose in my heart. I had to return to what I thought would be the place of fire. But instead, I found ashes.
 
-I moved to Washington, DC with Mount Purpose in my heart. Three events. Four storytellers. Twenty-nine community members who showed up with open hearts.
+All that I was - was no more. What once was a beautiful lush garden surrounding a kingdom was grown over and a much darker forest. There I faced my shadow. The boy that I was -- that left it all for this quest.
 
-**Lunar New Year Potluck** at Cielo. **LEAP with PURPOSE** at Pow Pow. **Women's Health in America** at the National Press Club.
+Yet from that vantage point, that mountain and my purpose connected. Mount Purpose was born in Washington, DC. We hosted three events gathering 29 community members and elevating four storytellers. My last event was the start of a series called 'Health in America' where we intended to explore what is truly happening with America's health from the stories of its changemakers.
 
-Each gathering felt sacred. Like we were building something that mattered. But I didn't have the energy. The resources. The rooted community to sustain it.
+## Pennsylvania
 
-Some seeds need different soil.
+After this event I knew that DC was the wrong place for me to build Mount Purpose. The grounds were no longer fertile for this kind of grassroots movement making. 
 
-I'm grateful beyond words for those who stepped forward to bring Mount Purpose to life in DC—who believed in the vision enough to show up, to hold space, to help me learn what these gatherings needed to become. You know who you are. You made it possible.
+My uncle messaged me and invited me to move up to Pennsylvania to take a sabbatical and regain my strength. I took him up on the offer and reveled in the idea of connecting with the ancient land, and for the first time, use all of my talents and skills to help shoulder up with the family business, an apple cider winery.
 
 ## Coming Home
 
-Last month, my father died.
+On October 13, my father died.
 
-Returning home to Columbus, Ohio for his story—sitting with family, piecing together a life, understanding the throughlines—something clarified. All these various steps along the way, the descent and the wandering and the experiments and the false starts, suddenly made sense.
+Returning home to Columbus, Ohio that night my work began to piece together a life, understanding the throughlines—something clarified. All these various steps along the way, my principled stand, the descent and the wandering and the experiments and the false starts, suddenly made sense.
 
-This wasn't failure. This was the path.
+This wasn't failure. This was the path. This was the shape of my story.
 
 The valley wasn't a detour. It was the necessary preparation for what I'm climbing now.
 
 ## Mount Purpose: The Ascent
 
-I see it clearly now. Mount Purpose. Not in DC, but here in Columbus, with a powerfully, meaningfully connected community. Not starting from scratch, but building on everything the valley taught me.
+I see it clearly now. Mount Purpose. Not in DC, but headquartered here in Columbus, with a powerfully, meaningfully connected community. Not starting from scratch, but building on everything the valley taught me.
 
 Ninety-seven events since 2010. Each one a step. Each gathering a practice in creating space for others navigating their own two-mountain journeys. The descent taught me what the ascent requires: rootedness, patience, community, and the courage to keep building even when the path isn't clear.
 
 This website is a marker on that climb. A base camp. A place where the wisdom from those gatherings can ripple outward. Where others in their own valleys can find companionship. Where we can walk this path together.
-
-## Honoring the Guides
-
-No one climbs alone.
-
-Dave Hahn, the Salmon Keeper in Beaver, Washington, who taught me about cycles and patience. My uncle, David Sterner the Cidermaker, who showed me the alchemy of time and transformation. My dear group of close friends and muses—you know who you are—who held space when I couldn't hold it myself.
-
-The twenty-nine community members who showed up to those early DC gatherings and made Mount Purpose real. The Columbus community now surrounding this work with roots deep enough to sustain it.
-
-And my father, whose death and story helped me finally connect all the pieces.
 
 ## An Invitation
 

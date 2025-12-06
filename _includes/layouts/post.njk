@@ -1,28 +1,185 @@
 ---
 layout: layouts/base.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
+{# Syntax highlighter CSS #}
 <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style>
 <style>{% include "css/prism-diff.css" %}</style>
-<h1>{{ title }}</h1>
 
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-</ul>
+{# Reading progress bar #}
+<div class="reading-progress" id="reading-progress"></div>
 
-{{ content | safe }}
+<article class="post-content">
+  <h1>{{ title }}</h1>
+  
+  <ul class="post-metadata">
+    <li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+    {%- for tag in tags | filterTagList %}
+    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+    {%- endfor %}
+  </ul>
 
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+  {{ content | safe }}
+
+  {%- if collections.posts %}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem %}
+  {%- set nextPost = collections.posts | getNextCollectionItem %}
+  {%- if nextPost or previousPost %}
+  <nav aria-label="Post navigation">
+    <ul class="links-nextprev">
+      {%- if previousPost %}
+      <li class="links-nextprev-prev">
+        ← Previous<br>
+        <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+      </li>
+      {% endif %}
+      {%- if nextPost %}
+      <li class="links-nextprev-next">
+        Next →<br>
+        <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+  {%- endif %}
+  {%- endif %}
+</article>
+
+{# Interactive Highlighting Script #}
+<script>
+(function() {
+  'use strict';
+  
+  // Reading Progress Bar
+  const progressBar = document.getElementById('reading-progress');
+  
+  function updateProgress() {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight - windowHeight;
+    const scrolled = window.scrollY;
+    const progress = (scrolled / documentHeight) * 100;
+    
+    if (progressBar) {
+      progressBar.style.width = progress + '%';
+    }
+  }
+  
+  window.addEventListener('scroll', updateProgress);
+  updateProgress();
+  
+  // Text Highlighting Feature
+  // Users can double-click text to highlight it
+  const article = document.querySelector('.post-content');
+  
+  if (article) {
+    // Load saved highlights from localStorage
+    const storageKey = 'highlights_' + window.location.pathname;
+    let highlights = [];
+    
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        highlights = JSON.parse(saved);
+        applyHighlights();
+      }
+    } catch (e) {
+      console.log('Could not load highlights');
+    }
+    
+    // Double-click to highlight
+    article.addEventListener('dblclick', function(e) {
+      const selection = window.getSelection();
+      const text = selection.toString().trim();
+      
+      if (text.length > 0 && text.length < 500) {
+        const range = selection.getRangeAt(0);
+        const span = document.createElement('span');
+        span.className = 'user-highlight';
+        span.setAttribute('data-highlight-text', text);
+        
+        try {
+          range.surroundContents(span);
+          
+          // Save highlight
+          highlights.push(text);
+          localStorage.setItem(storageKey, JSON.stringify(highlights));
+          
+          // Add click to remove
+          span.addEventListener('click', function() {
+            removeHighlight(this);
+          });
+          
+          selection.removeAllRanges();
+        } catch (err) {
+          console.log('Could not highlight selection');
+        }
+      }
+    });
+    
+    function removeHighlight(element) {
+      const text = element.getAttribute('data-highlight-text');
+      const parent = element.parentNode;
+      
+      // Remove from storage
+      highlights = highlights.filter(h => h !== text);
+      localStorage.setItem(storageKey, JSON.stringify(highlights));
+      
+      // Remove highlight visually
+      while (element.firstChild) {
+        parent.insertBefore(element.firstChild, element);
+      }
+      parent.removeChild(element);
+      parent.normalize();
+    }
+    
+    function applyHighlights() {
+      highlights.forEach(text => {
+        const walker = document.createTreeWalker(
+          article,
+          NodeFilter.SHOW_TEXT,
+          null,
+          false
+        );
+        
+        let node;
+        while (node = walker.nextNode()) {
+          const index = node.textContent.indexOf(text);
+          if (index !== -1) {
+            const range = document.createRange();
+            range.setStart(node, index);
+            range.setEnd(node, index + text.length);
+            
+            const span = document.createElement('span');
+            span.className = 'user-highlight';
+            span.setAttribute('data-highlight-text', text);
+            
+            try {
+              range.surroundContents(span);
+              span.addEventListener('click', function() {
+                removeHighlight(this);
+              });
+              break; // Only highlight first occurrence
+            } catch (err) {
+              // Skip if can't highlight
+            }
+          }
+        }
+      });
+    }
+  }
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+})();
+</script>
