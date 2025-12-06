@@ -45,9 +45,9 @@ layout: layouts/base.njk
   {%- endif %}
 </article>
 
-{# Interactive Highlighting Script #}
+{# Interactive Highlighting Script - Enhanced with Persistence #}
 <script>
-console.log('Highlight script loaded');
+console.log('Enhanced highlight script loaded');
 
 // Reading Progress Bar
 const progressBar = document.getElementById('reading-progress');
@@ -67,10 +67,8 @@ window.addEventListener('scroll', updateProgress);
 window.addEventListener('resize', updateProgress);
 updateProgress();
 
-// Wait for page to fully load
+// Enhanced Highlighting with Persistence
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM loaded, setting up highlights');
-  
   const article = document.querySelector('.post-content');
   
   if (!article) {
@@ -78,16 +76,27 @@ document.addEventListener('DOMContentLoaded', function() {
     return;
   }
   
-  console.log('Article found, adding listener');
+  // Storage key unique to this blog post
+  const storageKey = 'highlights_' + window.location.pathname;
+  let highlights = [];
+  
+  // Load saved highlights
+  try {
+    const saved = localStorage.getItem(storageKey);
+    if (saved) {
+      highlights = JSON.parse(saved);
+      console.log('Loaded', highlights.length, 'saved highlights');
+      restoreHighlights();
+    }
+  } catch (e) {
+    console.warn('Could not load highlights:', e);
+  }
   
   // Listen for text selection
   document.addEventListener('mouseup', function(e) {
-    // Wait a tiny bit for selection to complete
     setTimeout(function() {
       const selection = window.getSelection();
       const text = selection.toString().trim();
-      
-      console.log('Selection:', text);
       
       if (text.length === 0 || text.length > 300) {
         return;
@@ -109,7 +118,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (!inArticle) {
-          console.log('Selection not in article');
+          return;
+        }
+        
+        // Don't re-highlight already highlighted text
+        const container = range.commonAncestorContainer.parentElement;
+        if (container && container.classList.contains('user-highlight')) {
           return;
         }
         
@@ -117,21 +131,21 @@ document.addEventListener('DOMContentLoaded', function() {
         const mark = document.createElement('mark');
         mark.className = 'user-highlight';
         mark.title = 'Click to remove';
+        mark.setAttribute('data-text', text);
         
         range.surroundContents(mark);
         
-        console.log('Highlighted!');
+        // Save to storage
+        if (!highlights.includes(text)) {
+          highlights.push(text);
+          saveHighlights();
+          console.log('Saved highlight:', text.substring(0, 50) + '...');
+        }
         
         // Add remove handler
         mark.onclick = function(evt) {
           evt.stopPropagation();
-          console.log('Removing highlight');
-          const parent = this.parentNode;
-          while (this.firstChild) {
-            parent.insertBefore(this.firstChild, this);
-          }
-          parent.removeChild(this);
-          parent.normalize();
+          removeHighlight(this);
         };
         
         selection.removeAllRanges();
@@ -140,6 +154,90 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Highlight error:', err);
       }
     }, 10);
+  });
+  
+  function removeHighlight(element) {
+    const text = element.getAttribute('data-text');
+    const parent = element.parentNode;
+    
+    // Remove from storage
+    highlights = highlights.filter(h => h !== text);
+    saveHighlights();
+    console.log('Removed highlight');
+    
+    // Remove visually
+    while (element.firstChild) {
+      parent.insertBefore(element.firstChild, element);
+    }
+    parent.removeChild(element);
+    parent.normalize();
+  }
+  
+  function saveHighlights() {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(highlights));
+    } catch (e) {
+      console.warn('Could not save highlights:', e);
+    }
+  }
+  
+  function restoreHighlights() {
+    highlights.forEach(function(text) {
+      // Find the text in the article
+      const walker = document.createTreeWalker(
+        article,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+      
+      let node;
+      while (node = walker.nextNode()) {
+        const content = node.textContent;
+        const index = content.indexOf(text);
+        
+        if (index !== -1) {
+          try {
+            const range = document.createRange();
+            range.setStart(node, index);
+            range.setEnd(node, index + text.length);
+            
+            const mark = document.createElement('mark');
+            mark.className = 'user-highlight';
+            mark.title = 'Click to remove';
+            mark.setAttribute('data-text', text);
+            
+            range.surroundContents(mark);
+            
+            mark.onclick = function(evt) {
+              evt.stopPropagation();
+              removeHighlight(this);
+            };
+            
+            break; // Only highlight first occurrence
+          } catch (err) {
+            console.warn('Could not restore highlight:', err);
+          }
+        }
+      }
+    });
+  }
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return;
+      
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
   });
 });
 </script>
