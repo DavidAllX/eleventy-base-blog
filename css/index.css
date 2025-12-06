@@ -299,6 +299,7 @@ header {
 	padding: 1em;
 }
 
+/* Logo sizing - much smaller */
 .home {
 	margin: 0;
 	display: flex;
@@ -310,14 +311,40 @@ header {
 	align-items: center;
 }
 
-.home-link {
-	flex-grow: 1;
-	font-size: 1em;
-	font-weight: 700;
+.home a img {
+	height: 50px; /* Reduced from 85px */
+	width: auto;
+	object-fit: contain;
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.home-link:link:not(:hover) {
-	text-decoration: none;
+.home a:hover img {
+	transform: scale(1.05);
+	opacity: 0.85;
+}
+
+/* Desktop: Center the navigation, logo stays left */
+@media (min-width: 769px) {
+	header {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: center;
+		padding: 1.25em 2em;
+	}
+	
+	.home {
+		grid-column: 1;
+	}
+	
+	nav {
+		grid-column: 2;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.nav-toggle {
+		display: none; /* Hide hamburger on desktop */
+	}
 }
 
 /* Nav */
@@ -981,29 +1008,57 @@ article figcaption,
 	object-fit: contain; /* Prevent stretching */
 }
 
-/* Hamburger Menu for Mobile */
+/* Hamburger Menu Button - Better styling */
 .nav-toggle {
 	display: none;
 	background: none;
-	border: none;
+	border: 2px solid var(--color-accent);
+	border-radius: 4px;
 	cursor: pointer;
 	padding: 0.5rem;
 	z-index: 1000;
+	transition: background-color 0.2s ease;
+}
+
+.nav-toggle:hover {
+	background-color: var(--background-color);
 }
 
 .nav-toggle span {
 	display: block;
-	width: 25px;
+	width: 22px;
 	height: 2px;
-	background-color: var(--text-color);
-	margin: 5px 0;
+	background-color: var(--color-accent);
+	margin: 4px 0;
 	transition: transform 0.3s ease, opacity 0.3s ease;
+	border-radius: 2px;
 }
 
 /* Show hamburger on mobile */
 @media (max-width: 768px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1.5rem;
+	}
+	
+	.home {
+		order: 1;
+	}
+	
 	.nav-toggle {
 		display: block;
+		order: 2;
+	}
+	
+	nav {
+		order: 3;
+	}
+	
+	/* Logo smaller on mobile */
+	.home a img {
+		height: 45px;
 	}
 	
 	/* Hide nav by default on mobile */
@@ -1011,14 +1066,14 @@ article figcaption,
 		position: fixed;
 		top: 0;
 		right: -100%;
-		width: 70%;
-		max-width: 300px;
+		width: 75%;
+		max-width: 320px;
 		height: 100vh;
 		background-color: var(--background-secondary);
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 5rem 2rem 2rem 2rem;
-		box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+		box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
 		transition: right 0.3s ease;
 		z-index: 999;
 		overflow-y: auto;
@@ -1038,16 +1093,20 @@ article figcaption,
 	.nav-item a {
 		display: block;
 		width: 100%;
-		padding: 1rem 0;
-		font-size: 1.2rem;
+		padding: 1.25rem 0;
+		font-size: 1.15rem;
 		border-bottom: 1px solid var(--color-border);
 	}
 	
 	.nav-item a::after {
-		display: none; /* Remove underline animation on mobile */
+		display: none;
 	}
 	
 	/* Hamburger animation when active */
+	.nav-toggle.active {
+		background-color: var(--background-color);
+	}
+	
 	.nav-toggle.active span:nth-child(1) {
 		transform: rotate(45deg) translate(5px, 5px);
 	}
@@ -1068,13 +1127,15 @@ article figcaption,
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 998;
+		backdrop-filter: blur(2px);
 	}
 	
 	.nav-overlay.active {
 		display: block;
 	}
+}
 	
 	/* Smaller logo on mobile */
 	.home a img {
@@ -1085,7 +1146,6 @@ article figcaption,
 	header {
 		padding: 1rem;
 	}
-}
 
 /* Tablet adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
