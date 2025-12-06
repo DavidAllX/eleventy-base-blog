@@ -47,112 +47,99 @@ layout: layouts/base.njk
 
 {# Interactive Highlighting Script #}
 <script>
-(function() {
-  'use strict';
+console.log('Highlight script loaded');
+
+// Reading Progress Bar
+const progressBar = document.getElementById('reading-progress');
+
+function updateProgress() {
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight - windowHeight;
+  const scrolled = window.scrollY;
+  const progress = (scrolled / documentHeight) * 100;
   
-  // Reading Progress Bar
-  const progressBar = document.getElementById('reading-progress');
-  
-  function updateProgress() {
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight - windowHeight;
-    const scrolled = window.scrollY;
-    const progress = (scrolled / documentHeight) * 100;
-    
-    if (progressBar) {
-      progressBar.style.width = Math.min(progress, 100) + '%';
-    }
+  if (progressBar) {
+    progressBar.style.width = Math.min(progress, 100) + '%';
   }
+}
+
+window.addEventListener('scroll', updateProgress);
+window.addEventListener('resize', updateProgress);
+updateProgress();
+
+// Wait for page to fully load
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM loaded, setting up highlights');
   
-  window.addEventListener('scroll', updateProgress);
-  window.addEventListener('resize', updateProgress);
-  updateProgress();
-  
-  // Text Highlighting Feature - SIMPLIFIED VERSION
   const article = document.querySelector('.post-content');
   
-  if (!article) return;
-  
-  // Storage key for this page
-  const storageKey = 'highlights_' + window.location.pathname;
-  
-  // Simple highlighting without localStorage (it can be added later)
-  article.addEventListener('mouseup', function(e) {
-    const selection = window.getSelection();
-    const text = selection.toString().trim();
-    
-    // Only highlight if text is selected and reasonable length
-    if (text.length === 0 || text.length > 300) {
-      return;
-    }
-    
-    // Get the selected range
-    const range = selection.getRangeAt(0);
-    
-    // Make sure selection is within article
-    if (!article.contains(range.commonAncestorContainer)) {
-      return;
-    }
-    
-    // Check if already highlighted
-    const container = range.commonAncestorContainer.parentElement;
-    if (container && container.classList.contains('user-highlight')) {
-      return; // Already highlighted
-    }
-    
-    try {
-      // Create highlight span
-      const span = document.createElement('mark');
-      span.className = 'user-highlight';
-      span.title = 'Click to remove highlight';
-      
-      // Wrap the selection
-      range.surroundContents(span);
-      
-      // Add click handler to remove
-      span.addEventListener('click', function(evt) {
-        evt.stopPropagation();
-        removeHighlight(this);
-      });
-      
-      // Clear selection
-      selection.removeAllRanges();
-      
-    } catch (err) {
-      console.log('Could not highlight:', err.message);
-    }
-  });
-  
-  function removeHighlight(element) {
-    const parent = element.parentNode;
-    
-    // Move all child nodes out of the highlight
-    while (element.firstChild) {
-      parent.insertBefore(element.firstChild, element);
-    }
-    
-    // Remove the empty highlight element
-    parent.removeChild(element);
-    
-    // Normalize to merge adjacent text nodes
-    parent.normalize();
+  if (!article) {
+    console.error('No article element found');
+    return;
   }
   
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href === '#') return;
+  console.log('Article found, adding listener');
+  
+  // Listen for text selection
+  document.addEventListener('mouseup', function(e) {
+    // Wait a tiny bit for selection to complete
+    setTimeout(function() {
+      const selection = window.getSelection();
+      const text = selection.toString().trim();
       
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+      console.log('Selection:', text);
+      
+      if (text.length === 0 || text.length > 300) {
+        return;
       }
-    });
+      
+      try {
+        const range = selection.getRangeAt(0);
+        
+        // Check if selection is in the article
+        let node = range.commonAncestorContainer;
+        let inArticle = false;
+        
+        while (node) {
+          if (node === article) {
+            inArticle = true;
+            break;
+          }
+          node = node.parentNode;
+        }
+        
+        if (!inArticle) {
+          console.log('Selection not in article');
+          return;
+        }
+        
+        // Create highlight
+        const mark = document.createElement('mark');
+        mark.className = 'user-highlight';
+        mark.title = 'Click to remove';
+        
+        range.surroundContents(mark);
+        
+        console.log('Highlighted!');
+        
+        // Add remove handler
+        mark.onclick = function(evt) {
+          evt.stopPropagation();
+          console.log('Removing highlight');
+          const parent = this.parentNode;
+          while (this.firstChild) {
+            parent.insertBefore(this.firstChild, this);
+          }
+          parent.removeChild(this);
+          parent.normalize();
+        };
+        
+        selection.removeAllRanges();
+        
+      } catch (err) {
+        console.error('Highlight error:', err);
+      }
+    }, 10);
   });
-})();
+});
 </script>
