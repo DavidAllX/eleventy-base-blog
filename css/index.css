@@ -40,23 +40,10 @@
 	
 	--syntax-tab-size: 2;
 }
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background-color: #4A5C47;
-		--background-secondary: #556B52;
-		--background-message-box: #8A9B87;
-		--text-color: #F5F3E8;
-		--text-color-secondary: #D8D4C0;
-		--text-color-link: #E8D89F;
-		--text-color-link-hover: #F5E6B3;
-		--text-color-link-visited: #D4C386;
-		--color-accent: #E8D89F;
-		--color-border: #6B7D68;
-		--color-border-emphasis: #8A9B87;
-		--logo-light-display: none;
-		--logo-dark-display: block;
+	
+	/* Brighter header background for logo visibility */
+	header {
+		background-color: #667d63; /* Lighter sage-green for contrast */
 	}
 }
 
@@ -723,18 +710,6 @@ article figcaption,
 
 .links-nextprev a:hover {
 	color: var(--color-accent);
-}
-
-/* Dark Mode Blog Adjustments */
-@media (prefers-color-scheme: dark) {
-	article h1,
-	.post-content h1,
-	article h2,
-	.post-content h2,
-	article strong,
-	.post-content strong {
-		color: var(--text-color);
-	}
 }
 
 /* ==========================================
