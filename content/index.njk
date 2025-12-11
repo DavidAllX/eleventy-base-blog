@@ -84,15 +84,12 @@ const numberOfLatestPostsToShow = 3;
 
 <hr style="border: none; border-top: 1px solid var(--color-border); margin: 3em 0;">
 
-<h2>Recent Reflections</h2>
+<h2>Stories & Wisdom</h2>
 
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
 {% include "postslist.njk" %}
 
-<p><a href="/blog/">More insights →</a></p>
+<p><a href="/blog/">More Stories →</a></p>
 
 <hr style="border: none; border-top: 1px solid var(--color-border); margin: 3em 0;">
 
