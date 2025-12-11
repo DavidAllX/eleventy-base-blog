@@ -90,11 +90,7 @@ If you're navigating this transition—if you've heard the whisper and you're re
 
 And most importantly: be kind to yourself. This transition is disorienting. It's supposed to be.
 
-You're not lost. You're exactly where you need to be.
-
-See you at the summit,
-
-David
+You're not lost. You're exactly where you need to be. Keep climbing.
 
 ---
 

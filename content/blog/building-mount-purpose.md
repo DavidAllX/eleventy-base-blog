@@ -54,6 +54,12 @@ After this event I knew that DC was the wrong place for me to build Mount Purpos
 
 My uncle messaged me and invited me to move up to Pennsylvania to take a sabbatical and regain my strength. I took him up on the offer and reveled in the idea of connecting with the ancient land, and for the first time, use all of my talents and skills to help shoulder up with the family business, an apple cider winery.
 
+But that's not all. In Pennsylvania, like the Olympic Peninsula, I grieved. I wrote hundreds of poems. I read lots of books. I dove deep into an early passion of playing chess -- which led me to YouTube where I was inspired to focus on building my own YouTube channel and making LOADS OF CONTENT.
+
+- [Subscribe to the Mount Purpose YouTube Channel](https://www.youtube.com/@MountPurpose)
+
+And from a technical perspective, I rekindled my passion for building digital community in social media and continued to teach myself how to write code: (this website is built entirely from open source code by me with help from Claude).
+
 ## Coming Home
 
 On October 13, my father died.
