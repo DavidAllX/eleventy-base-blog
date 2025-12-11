@@ -1,7 +1,8 @@
 ---
-title: "From the Valley to Mount Purpose: A Second Mountain Journey"
+title: "From the Valley to Mount Purpose: A Two Mountain Journey"
 description: "How walking away from success, descending through loss, and returning home revealed the mountain I was always meant to climb."
 date: 2025-11-29
+thumbnail: "/img/blog/blog_twomountainjourney.png"
 tags:
   - journey
   - second-mountain
@@ -15,7 +16,7 @@ It began the day I walked away from my first mountain.
 
 ## Walking Away from the Summit
 
-I had built a $5 million annual revenue social media agency. By conventional metrics, I had summited. Success. Revenue. Recognition. All the markers that tell you you've made it.
+I had built a $4.6 million annual revenue social media agency. The first in Washington, DC. By conventional metrics, I had summited. Success. Revenue. Recognition. All the markers that tell you you've made it.
 
 And then I looked at what I was building. At whose interests I was serving. At the distance between my principles and my practice.
 
@@ -37,7 +38,7 @@ During Covid, I found myself on the Olympic Peninsula in Washington—in Beaver,
 
 In that liminal space, surrounded by old growth forest, I felt something shift. Not a return to the first mountain, but the first glimpse of a second one. Higher. Different. Built not on achievement but on alignment.
 
-I called it Mount Ethos. A metaphor. The mountain of principle. The inward climb to a much taller peak.
+I first called it Mount Ethos. A metaphor. The mountain of principle. The inward climb to a much taller peak. It was a feeling -- my feeling of purpose -- not a brand.
 
 ## The DC Look Back
 

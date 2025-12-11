@@ -18,6 +18,10 @@ export default async function(eleventyConfig) {
 			return false;
 		}
 	});
+	// Add collection for blog posts (newest first)
+	eleventyConfig.addCollection("posts", function(collectionApi) {
+		return collectionApi.getFilteredByTag("posts").reverse();
+	});
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`

@@ -2,6 +2,7 @@
 title: "Why Does Success Feel Empty?"
 description: "If you've achieved everything you set out to do but still feel like something's missing—you're not broken. You're hearing the whisper."
 date: 2024-12-11
+thumbnail: "/img/blog/1_blog_thumbnail.png"
 tags:
   - two-mountain-journey
   - second-mountain
